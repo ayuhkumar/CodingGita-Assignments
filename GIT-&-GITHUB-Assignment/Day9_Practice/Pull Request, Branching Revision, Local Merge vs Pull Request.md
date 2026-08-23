@@ -46,6 +46,8 @@
 6. Delete the feature branch.
 7. Verify with `git branch` and `git log --oneline`.
 
+<img width="1165" height="1003" alt="Screenshot 2026-08-17 181428" src="https://github.com/user-attachments/assets/627f4903-e4ad-4b74-87d6-74770e2d7c55" />
+<img width="778" height="435" alt="Screenshot 2026-08-17 181354" src="https://github.com/user-attachments/assets/8a5d6459-6cd2-4466-84dd-88d6d4a41bce" />
 
 
 
@@ -72,6 +74,9 @@
    git branch -d feature/services-page
    ```
 
+<img width="1920" height="1020" alt="Screenshot 2026-08-17 182944" src="https://github.com/user-attachments/assets/e7bbe73c-46e6-469c-87d9-31f497ce7d49" />
+<img width="1920" height="1020" alt="Screenshot 2026-08-17 182842" src="https://github.com/user-attachments/assets/cd122845-bbe0-43bb-a661-81f53930bc83" />
+<img width="1920" height="1020" alt="Screenshot 2026-08-17 182718" src="https://github.com/user-attachments/assets/d76a5a1f-e0ee-4a1d-a9f3-563e72a71813" />
 
 
 ### Assignment 5: Complete Understanding + Reflection
