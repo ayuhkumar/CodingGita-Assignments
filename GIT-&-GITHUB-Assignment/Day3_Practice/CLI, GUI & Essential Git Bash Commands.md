@@ -11,7 +11,7 @@
 4. Why do we prefer **CLI (Git Bash)** for using Git instead of a GUI tool?
 5. Give 2 examples of GUI and 2 examples of CLI.
 
-<img width="675" height="846" alt="download" src="https://github.com/user-attachments/assets/0343cdaf-8a01-44b3-a53c-36e486e06dc6" />
+<img width="1200" height="1600" alt="639964264-3f3485ce-f85e-4559-80c7-e8f07265bfc1" src="https://github.com/user-attachments/assets/0eef6332-e8a3-4cf9-9530-23f6f077655a" />
 
 ### Assignment 2: Git Installation & VS Code Setup
 
@@ -25,7 +25,10 @@
    - Git Bash showing `git --version` output
    - VS Code terminal showing Git Bash is selected
   
-  <img width="675" height="846" alt="download" src="https://github.com/user-attachments/assets/6756b57a-0dbf-4f26-8d19-5af9740f0c29" />
+<img width="1200" height="1600" alt="639964320-cc0e35dd-8ab0-4c64-a671-845269c7bded" src="https://github.com/user-attachments/assets/d75f90fb-ca99-4abb-b4c2-7c73292dc24c" />
+<img width="1118" height="467" alt="image" src="https://github.com/user-attachments/assets/038c9a8f-8d36-4eef-a7ef-d96daccb4211" />
+
+<img width="420" height="535" alt="image" src="https://github.com/user-attachments/assets/0544390d-f771-4704-b373-bf85482eb19e" />
 
 ### Assignment 3: Navigation & Listing Commands (Practical)
 
@@ -50,9 +53,9 @@
    - `cd -`
    - `ls -la`
 
-<img width="675" height="846" alt="download" src="https://github.com/user-attachments/assets/9435018a-b5c7-41bc-81bf-b1b515de4852" />
+<img width="1200" height="1600" alt="639964320-cc0e35dd-8ab0-4c64-a671-845269c7bded" src="https://github.com/user-attachments/assets/db024024-e48f-423d-ab9b-c1107e385524" />
 
-<img width="675" height="846" alt="download" src="https://github.com/user-attachments/assets/1796a5cd-a71f-474b-b360-aaf912a6564f" />
+<img width="1200" height="1600" alt="639964497-07b7b01c-9edf-4a36-a52b-697a67fde90f" src="https://github.com/user-attachments/assets/875f79df-2f95-4f50-9b52-05ef032aca91" />
 
 ### Assignment 4: File & Folder Operations (Practical)
 
@@ -76,9 +79,8 @@ Perform the following in Git Bash and write the exact commands:
 - Why should we be careful while using `rm -rf`?
 
 
-<img width="675" height="846" alt="download" src="https://github.com/user-attachments/assets/5806c671-1469-4cfb-b670-6637e8e8333d" />
+<img width="1200" height="1600" alt="639964572-48154040-d6de-4fd0-83cd-c8c1c5e6bd7a" src="https://github.com/user-attachments/assets/64a008b1-de4b-4402-a087-094d6d9a24a5" />
 
-<img width="675" height="846" alt="download" src="https://github.com/user-attachments/assets/91e8aa54-758f-4960-90f6-68f4927ef9fb" />
 
 ### Assignment 5: Command Meaning + Reflection
 
@@ -109,7 +111,7 @@ Perform the following in Git Bash and write the exact commands:
 
 3. Write **4 key takeaways**
 
-<img width="675" height="846" alt="download" src="https://github.com/user-attachments/assets/49039174-7cb7-427f-a4e6-98e979867e29" />
+<img width="1200" height="1600" alt="639964634-81936d74-0b7f-448b-9c63-742da361f2ab" src="https://github.com/user-attachments/assets/4f69c80e-79b7-43d2-a444-60aad00d5be5" />
 
 
 
