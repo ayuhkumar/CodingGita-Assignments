@@ -53,7 +53,11 @@
 8. Verify using:
    - `git branch`
    - `git log --oneline`
-  
+<img width="423" height="102" alt="image" src="https://github.com/user-attachments/assets/4e44deda-7deb-49c6-9e1e-dc02792fb325" />
+ <img width="541" height="264" alt="image" src="https://github.com/user-attachments/assets/f9d4ccde-355e-458e-b7fb-300cd9393ba1" />
+<img width="545" height="174" alt="image" src="https://github.com/user-attachments/assets/3fc3a185-71e6-430c-adef-7e248173b2db" />
+<img width="1421" height="770" alt="image" src="https://github.com/user-attachments/assets/a5827fd4-4a35-4c28-9849-2a978d95ede3" />
+
 
 
 ### Assignment 4: Medium – Conceptual + Error Handling
@@ -98,7 +102,11 @@ You are working on a website project. Currently you are on the `main` branch. Yo
 
 
 <img width="1200" height="1600" alt="image" src="https://github.com/user-attachments/assets/26b2f349-1833-457d-bd2e-cb9fd2bd280d" />
+<img width="610" height="206" alt="image" src="https://github.com/user-attachments/assets/505a5ce6-8c49-4a3b-a1db-79399e531f31" />
+<img width="427" height="98" alt="image" src="https://github.com/user-attachments/assets/bc0e8914-dd14-4209-bb49-42b0cb947b32" />
+<img width="463" height="77" alt="image" src="https://github.com/user-attachments/assets/dd87e927-674b-4358-9b1e-7fda6299469d" />
 
+<img width="500" height="176" alt="image" src="https://github.com/user-attachments/assets/7be33a13-7fe6-4b00-a7e0-b3446501b41a" />
 
 
 
