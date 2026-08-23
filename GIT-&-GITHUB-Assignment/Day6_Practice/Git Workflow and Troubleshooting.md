@@ -31,10 +31,17 @@ git push origin main
    - The commit message **“Added practice file”** is visible
 
 ---
+<img width="1200" height="1600" alt="639965818-9222917b-651e-4887-9a04-79e9698d35de" src="https://github.com/user-attachments/assets/107c4d25-624f-4565-8628-976330487d2c" />
+<img width="1200" height="1600" alt="639965826-9be11b92-3df6-4869-8c7d-5b9f0e2f2a91" src="https://github.com/user-attachments/assets/c1e94fad-591d-4705-a303-7aa160d24adb" />
 
-<img width="675" height="846" alt="download" src="https://github.com/user-attachments/assets/1d74ddfb-84e0-4dd3-812b-e9ce199fdd82" />
+<img width="1200" height="1600" alt="639965833-4f4cd61e-a575-4088-a9db-69e2c3ed656f" src="https://github.com/user-attachments/assets/68c4f7c3-fe0f-45a1-9c51-85ca3f3e5988" />
 
-<img width="675" height="846" alt="download" src="https://github.com/user-attachments/assets/ba5e7068-f216-40ae-9631-d5b5fd3f39a4" />
-<img width="675" height="846" alt="download" src="https://github.com/user-attachments/assets/e40a27c6-03b6-40b0-bd0a-36131c96584c" />
+https://github.com/ayuhkumar/Merge-Conflict-Practice/blob/main/practice.txt
+<img width="589" height="251" alt="image" src="https://github.com/user-attachments/assets/78708c5a-fc74-49c7-b458-c47c51303929" />
+<img width="624" height="205" alt="image" src="https://github.com/user-attachments/assets/aeab043d-1b30-473c-85b0-c4795933eb02" />
+<img width="1059" height="436" alt="image" src="https://github.com/user-attachments/assets/a8b7aa28-c8d1-47b5-b882-63b2c8897e04" />
 
+<img width="656" height="278" alt="image" src="https://github.com/user-attachments/assets/051929cf-3909-4551-b0d5-c3009daecad9" />
+
+<img width="1425" height="775" alt="image" src="https://github.com/user-attachments/assets/712d3628-669f-4c08-918b-fdceaf5bedfa" />
 
