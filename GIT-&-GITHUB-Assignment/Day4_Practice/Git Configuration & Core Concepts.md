@@ -15,7 +15,9 @@
    - Why do we use the `--global` flag?
    - Do we need to configure name and email for every new project? Why or why not?
 
-<img width="675" height="846" alt="download" src="https://github.com/user-attachments/assets/5cd750bb-936c-4b41-9d3a-4f446b5ff9e2" />
+<img width="1200" height="1600" alt="639964925-a8933ed6-9f6f-4378-834b-95336ade20c9" src="https://github.com/user-attachments/assets/2db72cf6-7568-48e9-860b-c846dce0204b" />
+
+<img width="1460" height="547" alt="image" src="https://github.com/user-attachments/assets/87a47a7c-3bb6-424c-a451-984a34cc8e27" />
 
 ### Assignment 2: Understanding Core Concepts
 
@@ -34,9 +36,9 @@
 
 3. What is the difference between **Local Repository** and **Remote Repository**?
 
-<img width="675" height="846" alt="download" src="https://github.com/user-attachments/assets/1eacc409-f423-4291-8262-4f4da0be95c6" />
-<img width="675" height="846" alt="download" src="https://github.com/user-attachments/assets/d72dc0f4-6018-40f0-9177-008c75f4b4dc" />
-<img width="675" height="846" alt="download" src="https://github.com/user-attachments/assets/73e0816b-5986-479d-a24d-73844f649a4b" />
+<img width="1200" height="1600" alt="639964997-f68db092-08cd-4ec5-a83e-41b5c4503014" src="https://github.com/user-attachments/assets/f1e4438d-734e-440d-bb31-6ac43b7495c0" />
+<img width="1200" height="1600" alt="639964986-d11e49e6-2e3b-46df-bdc1-1040ed4df60c" src="https://github.com/user-attachments/assets/a616a310-bb1b-4c3a-8309-823fd5c90b53" />
+<img width="1200" height="1600" alt="639965045-a1a3c850-08d6-45ad-896f-7598a360a796" src="https://github.com/user-attachments/assets/f059ea43-4834-4c07-9500-450db589c340" />
 
 ### Assignment 3: Local vs Remote + Flow
 
@@ -57,7 +59,8 @@ Fill in the missing stages and the commands used at each step.
    - Where does `git add` move the files?
    - Where does `git commit` save the changes?
    - Does `git commit` upload code to GitHub? Explain.
-<img width="675" height="846" alt="download" src="https://github.com/user-attachments/assets/cc9a94d2-0a70-4da6-ace1-4452fd8a392d" />
+<img width="1200" height="1600" alt="639965045-a1a3c850-08d6-45ad-896f-7598a360a796" src="https://github.com/user-attachments/assets/d7326d49-a902-46dd-9705-5ff0ea74af38" />
+
 
 
 ### Assignment 4: Conceptual Clarity
@@ -83,7 +86,8 @@ Fill in the missing stages and the commands used at each step.
 | Remote Repo     |                                              |
 
 3. Write 4 key points you learned in Day 4.
-<img width="675" height="846" alt="download" src="https://github.com/user-attachments/assets/bfb3ecd5-6163-4934-98b5-9bba44f9258c" />
+<img width="1200" height="1600" alt="639965085-5ff79f7e-5855-4903-83bd-0b5762aa8ddb" src="https://github.com/user-attachments/assets/c093486d-7bc0-45bb-b302-7fb41851a751" />
+
 ### Assignment 5: Reflection + Real-life Understanding
 
 **Objective:** Connect concepts to real usage.
@@ -94,8 +98,7 @@ Fill in the missing stages and the commands used at each step.
 3. When would you use **Fork** instead of **Clone**?
 4. Explain the following sentence in your own words:  
    “Commit happens locally, Push happens to remote.”
-<img width="675" height="846" alt="download" src="https://github.com/user-attachments/assets/dd108c62-0fe2-4f8f-8d92-b1f4e1b65181" />
-<img width="675" height="846" alt="download" src="https://github.com/user-attachments/assets/e97f8743-3120-4277-9396-fc979e0316b2" />
+<img width="1200" height="1600" alt="639965134-d8c96883-c4fb-47b5-96cd-8f1c8a5a4c03" src="https://github.com/user-attachments/assets/82e2bbe5-6d65-4707-b099-80b064c4ab40" />
 
 
 
