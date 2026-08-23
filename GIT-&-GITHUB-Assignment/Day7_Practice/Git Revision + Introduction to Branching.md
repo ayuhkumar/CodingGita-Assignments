@@ -19,6 +19,7 @@
 <img width="1200" height="1600" alt="image" src="https://github.com/user-attachments/assets/fbf7d03d-22df-4c90-96fa-0dc0bc903277" />
 
 
+
 ### Assignment 2: Two Methods to Push Code
 
 **Objective:** Understand both ways of pushing code to GitHub.
@@ -57,6 +58,10 @@
    git branch -M main
    git push -u origin main
    ```
+   <img width="455" height="143" alt="image" src="https://github.com/user-attachments/assets/706bb77e-1e68-4280-aa3e-368cbed52fab" />
+   <img width="581" height="292" alt="image" src="https://github.com/user-attachments/assets/7ad2519d-50d2-4adf-915e-fd5b74a51484" />
+<img width="1413" height="767" alt="image" src="https://github.com/user-attachments/assets/558dfbbb-ec4b-4084-8928-676b08b06ba7" />
+
 4. Verify that the file appears on GitHub.
 
 
