@@ -11,11 +11,9 @@
 4. When should you use Fork instead of Clone?
 5. Write one real-life example where Fork is useful.
 
-<img width="675" height="386" alt="image" src="https://github.com/user-attachments/assets/be7d5d88-b050-417f-8137-f4ed6c5cbb1d" />
-<img width="622" height="172" alt="image" src="https://github.com/user-attachments/assets/8092c445-3216-4bb7-98aa-0575eb00cbb6" />
+<img width="1200" height="1600" alt="639965279-9632a062-57b5-4322-8e56-523a86a7e8a2" src="https://github.com/user-attachments/assets/e60cc343-5411-4397-a097-e037af926917" />
+<img width="1200" height="1600" alt="639965299-541a5ac7-9dcb-480e-9e22-ccf30980c34b" src="https://github.com/user-attachments/assets/e561304b-3ce0-4e56-8a87-dc5f1167202c" />
 
-<img width="675" height="145" alt="image" src="https://github.com/user-attachments/assets/29c21ab3-f4ec-4dc7-8e96-ec7891fc27e8" />
-<img width="675" height="846" alt="download" src="https://github.com/user-attachments/assets/2cb1826c-92c5-4ca2-a4ec-66641ac04c55" />
 
 
 ### Assignment 2: git status, git add & git commit (Conceptual)
@@ -30,9 +28,8 @@
 3. Why do we need a **Staging Area**? Explain in 3–4 lines.
 4. Write 4 **good** commit messages and 4 **bad** commit messages.
 5. Does `git commit` upload code to GitHub? Explain why or why not.
-<img width="675" height="846" alt="download" src="https://github.com/user-attachments/assets/2989318b-c6a3-47c0-b9e8-8b5403639cea" />
-
-<img width="675" height="846" alt="download" src="https://github.com/user-attachments/assets/736fcd36-f622-46eb-8e4e-173cad067883" />
+<img width="1200" height="1600" alt="639965299-541a5ac7-9dcb-480e-9e22-ccf30980c34b" src="https://github.com/user-attachments/assets/f8d7c34e-ac6f-41fd-82ef-d83463fbc56a" />
+<img width="1200" height="1600" alt="639965408-74e22be0-f744-45c7-8097-2ab02898390d" src="https://github.com/user-attachments/assets/269cce5f-77da-4dd3-ad8c-b9ce913b7f92" />
 
 ### Assignment 3: Practical – Clone + Basic Workflow
 
@@ -53,7 +50,13 @@
    git push origin main
    ```
 5. Verify that the file appears on GitHub.
-<img width="675" height="846" alt="download" src="https://github.com/user-attachments/assets/acf37f00-432f-4741-9fa1-c1baf80a6d93" />
+<img width="1200" height="1600" alt="639965408-74e22be0-f744-45c7-8097-2ab02898390d" src="https://github.com/user-attachments/assets/b05cef6a-e70d-4851-8099-1c038e0ce969" />
+<img width="703" height="245" alt="image" src="https://github.com/user-attachments/assets/5f791208-5079-4619-98df-6725b183dce0" />
+<img width="625" height="287" alt="image" src="https://github.com/user-attachments/assets/19db4774-56cd-471a-aeb7-b222f98b3483" />
+<img width="560" height="148" alt="image" src="https://github.com/user-attachments/assets/54c12888-bee9-461d-961d-380221d8e5f5" />
+<img width="608" height="268" alt="image" src="https://github.com/user-attachments/assets/c96d2c42-6249-4f18-8b5b-122eab241d09" />
+
+<img width="1421" height="809" alt="image" src="https://github.com/user-attachments/assets/8aa4ab34-3a6a-4ee7-aeed-57a0db9034a8" />
 
 ### Assignment 4: Command Flow & Movement
 
@@ -83,12 +86,7 @@ Remote Repository (GitHub)
 3. What is the use of the `-u` flag in `git push -u origin main`?
 
 
-<img width="675" height="337" alt="image" src="https://github.com/user-attachments/assets/ac7d5dcd-f048-474a-8a01-6164f52cf44f" />
-
-<img width="622" height="57" alt="image" src="https://github.com/user-attachments/assets/e8baeec0-e926-46d2-9f9d-481553b2e89b" />
-
-
-<img width="675" height="233" alt="image" src="https://github.com/user-attachments/assets/7d962490-e59e-435d-b3c1-75718ebb093d" />
+<img width="1200" height="1600" alt="639965477-e9678927-e591-439c-b5c9-a6e88b0169ca" src="https://github.com/user-attachments/assets/cb34501b-d0e6-4026-8da0-47886a80571f" />
 
 ### Assignment 5: Overall Understanding + Reflection
 
@@ -101,8 +99,9 @@ Remote Repository (GitHub)
    - What happens if we commit without staging?
    - What is the difference between local commit and push?
 3. Write **4 key takeaways** from Day 5.
-<img width="675" height="846" alt="download" src="https://github.com/user-attachments/assets/4ae31038-d2b6-4316-aee8-544dadb5b601" />
-<img width="675" height="846" alt="download" src="https://github.com/user-attachments/assets/3654edb0-ca17-4bf5-945b-bc6ee1d3feb8" />
+<img width="1200" height="1600" alt="639965493-9788b825-aa8d-4c64-805a-c3aeff516f23" src="https://github.com/user-attachments/assets/6a596e19-cfaf-4b71-b859-0b2108a1481b" />
+
+<img width="1200" height="1600" alt="639965512-091c6095-6ef7-4df4-b51e-0d30bffe7acb" src="https://github.com/user-attachments/assets/573afb48-835d-44f2-a0d4-87b082a3ac8d" />
 
 
 
