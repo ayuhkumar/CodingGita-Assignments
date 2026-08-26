@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML Iframe Assignment</title>
+
+    <style>
+
+        /* Question 4 */
+        .responsive-iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+            margin: 10px;
+        }
+
+        /* Question 9 and Question 17 */
+        .side-by-side {
+            display: flex;
+            gap: 2%;
+        }
+
+        .side-by-side iframe {
+            border: none;
+        }
+
+        /* Question 13 and Question 23 */
+        .video-container {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Question 20 */
+        .styled-iframe {
+            width: 100%;
+            height: 420px;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Question 21 */
+        .device-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: lightgray;
+            text-decoration: none;
+            color: black;
+            border-radius: 5px;
+        }
+
+        /* Question 23 */
+        .responsive-video {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            border: none;
+        }
+
+        /* Question 25 */
+        .full-page {
+            margin: 0;
+        }
+
+        .full-page header {
+            height: 60px;
+            padding: 15px;
+            box-sizing: border-box;
+            background-color: lightgray;
+        }
+
+        .full-page iframe {
+            width: 100%;
+            height: calc(100vh - 60px);
+            border: none;
+        }
+
+        /* Question 28 */
+        .iframe-card {
+            width: 90%;
+            max-width: 800px;
+            height: 400px;
+            margin: 30px auto;
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .iframe-card iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 10px;
+        }
+
+        /* Question 29 */
+        .comparison {
+            display: flex;
+            gap: 2%;
+        }
+
+        .comparison iframe {
+            width: 48%;
+            height: 350px;
+            border: none;
+        }
+
+        @media (max-width: 600px) {
+
+            .side-by-side,
+            .comparison {
+                flex-direction: column;
+            }
+
+            .side-by-side iframe,
+            .comparison iframe {
+                width: 100%;
+                margin-bottom: 15px;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <h1>HTML Iframe Assignment</h1>
+
+
+    <!-- ===================================================== -->
+    <!-- QUESTION 1 -->
+    <!-- ===================================================== -->
+
+    <h2>Question 1 - Basic Iframe</h2>
+
+    <iframe
+        src="https://www.example.com"
+        width="100%"
+        height="400"
+        title="Example Website"
+        style="border: none;">
+    </iframe>
+
+
+    <!-- ===================================================== -->
+    <!-- QUESTION 2 -->
+    <!-- ===================================================== -->
+
+    <h2>Question 2 - Link Loading Into Iframe</h2>
+
+    <a
+        href="https://www.example.com"
+        target="exampleFrame">
+        Open Example Site
+    </a>
+
+    <br><br>
+
+    <iframe
+        name="exampleFrame"
+        src="https://www.example.com"
+        width="100%"
+        height="300"
+        title="Example Website Frame"
+        style="border: none;">
+    </iframe>
+
+
+    <!-- ===================================================== -->
+    <!-- QUESTION 3 -->
+    <!-- ===================================================== -->
+
+    <h2>Question 3 - YouTube Video Iframe</h2>
+
+    <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube-nocookie.com/embed/kUMe1FH4CHE"
+        allow="fullscreen; gyroscope"
+        allowfullscreen
+        title="Learn HTML - Full Tutorial for Beginners">
+    </iframe>
+
+
+    <!-- ===================================================== -->
+    <!-- QUESTION 4 -->
+    <!-- ===================================================== -->
+
+    <h2>Question 4 - Responsive Iframe</h2>
+
+    <iframe
+        class="responsive-iframe"
+        src="https://www.example.com"
+        title="Responsive Example Website">
+    </iframe>
+
+
+    <!-- ===================================================== -->
+    <!-- QUESTION 5 -->
+    <!-- ===================================================== -->
+
+    <h2>Question 5 - Fullscreen Permission</h2>
+
+    <iframe
+        src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&amp;layer=mapnik"
+        width="800"
+        height="450"
+        allow="fullscreen"
+        title="OpenStreetMap Map"
+        style="border: none;">
+    </iframe>
+
+
+    <!-- ===================================================== -->
+    <!-- QUESTION 6 -->
+    <!-- ===================================================== -->
+
+    <h2>Question 6 - Gyroscope Permission</h2>
+
+    <iframe
+        src="https://www.youtube-nocookie.com/embed/Zi-Q0t4gMC8"
+        width="100%"
+        height="500"
+        allow="gyroscope"
+        title="JavaScript Course for Beginners"
+        style="border: none;">
+    </iframe>
+
+
+    <!-- ===================================================== -->
+    <!-- QUESTION 7 -->
+    <!-- ===================================================== -->
+
+    <h2>Question 7 - USB Permission</h2>
+
+    <iframe
+        src="https://device.example.com"
+        width="600"
+        height="400"
+        allow="usb"
+        title="USB Device Control">
+    </iframe>
+
+
+    <!-- ===================================================== -->
+    <!-- QUESTION 8 -->
+    <!-- ===================================================== -->
+
+    <h2>Question 8 - Multiple Permissions</h2>
+
+    <iframe
+        src="https://www.youtube-nocookie.com/embed/kUMe1FH4CHE"
+        width="800"
+        height="450"
+        allow="fullscreen; gyroscope; usb"
+        title="HTML Tutorial With Multiple Permissions"
+        style="border: none;">
+    </iframe>
+
+
+    <!-- ===================================================== -->
+    <!-- QUESTION 9 -->
+    <!-- ===================================================== -->
+
+    <h2>Question 9 - Two Iframes Side by Side</h2>
+
+    <div class="side-by-side">
+
+        <iframe
+            src="https://www.youtube-nocookie.com/embed/kUMe1FH4CHE"
+            width="48%"
+            height="350"
+            allow="fullscreen"
+            title="HTML Video With Fullscreen">
+        </iframe>
+
+        <iframe
+            src="https://www.youtube-nocookie.com/embed/Zi-Q0t4gMC8"
+            width="48%"
+            height="350"
+            allow="gyroscope"
+            title="JavaScript Video With Gyroscope">
+        </iframe>
+
+    </div>
+
+
+    <!-- ===================================================== -->
+    <!-- QUESTION 10 -->
+    <!-- ===================================================== -->
+
+    <h2>Question 10 - Navigation Menu With Iframe</h2>
+
+    <nav>
+
+        <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+            target="navigationFrame">
+            MDN HTML
+        </a>
+
+        &nbsp;&nbsp;
+
+        <a
+            href="https://www.w3.org/"
+            target="navigationFrame">
+            W3C
+        </a>
+
+        &nbsp;&nbsp;
+
+        <a
+            href="https://www.openstreetmap.org/"
+            target="navigationFrame">
+            OpenStreetMap
+        </a>
+
+    </nav>
+
+    <br>
+
+    <iframe
+        name="navigationFrame"
+        src="https://developer.mozilla.org/en-US/docs/Web/HTML"
+        width="100%"
+        height="400"
+        title="Website Navigation Frame"
+        style="border: none;">
+    </iframe>
+
+
+    <!-- ===================================================== -->
+    <!-- QUESTION 11 -->
+    <!-- ===================================================== -->
+
+    <h2>Question 11 - Video With Gyroscope</h2>
+
+    <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube-nocookie.com/embed/Zi-Q0t4gMC8"
+        allow="fullscreen; gyroscope"
+        allowfullscreen
+        title="JavaScript Course for Beginners">
+    </iframe>
+
+
+    <!-- ===================================================== -->
+    <!-- QUESTION 12 -->
+    <!-- ===================================================== -->
+
+    <h2>Question 12 - Iframe Without Allow Attribute</h2>
+
+    <iframe
+        src="https://www.example.com"
+        width="100%"
+        height="300"
+        title="Example Website Without Permissions"
+        style="border: none;">
+    </iframe>
+
+
+    <!-- ===================================================== -->
+    <!-- QUESTION 13 -->
+    <!-- ===================================================== -->
+
+    <h2>Question 13 - Responsive Aspect Ratio Iframe</h2>
+
+    <div class="video-container">
+
+        <iframe
+            src="https://www.youtube-nocookie.com/embed/kUMe1FH4CHE"
+            title="Responsive HTML Tutorial">
+        </iframe>
+
+    </div>
+
+
+    <!-- ===================================================== -->
+    <!-- QUESTION 14 -->
+    <!-- ===================================================== -->
+
+    <h2>Question 14 - USB And Fullscreen Iframes</h2>
+
+    <p>
+        This page demonstrates two iframes with different permissions.
+    </p>
+
+    <iframe
+        src="https://device.example.com"
+        width="600"
+        height="300"
+        allow="usb"
+        title="USB Device Content"
+        style="border: none;">
+    </iframe>
+
+    <br><br>
+
+    <iframe
+        src="https://www.youtube-nocookie.com/embed/kUMe1FH4CHE"
+        width="700"
+        height="400"
+        allow="fullscreen"
+        title="HTML Video With Fullscreen Permission"
+        style="border: none;">
+    </iframe>
+
+
+    <!-- ===================================================== -->
+    <!-- QUESTION 15 -->
+    <!-- ===================================================== -->
+
+    <h2>Question 15 - Completed Iframe</h2>
+
+    <iframe
+        src="https://www.example.com"
+        width="100%"
+        height="400"
+        allow="fullscreen; gyroscope"
+        title="Example Website With Fullscreen And Gyroscope"
+        style="border: none;">
+    </iframe>
+
+
+    <!-- ===================================================== -->
+    <!-- QUESTION 16 -->
+    <!-- ===================================================== -->
+
+    <h2>Question 16 - Fullscreen And Gyroscope</h2>
+
+    <iframe
+        src="https://www.youtube-nocookie.com/embed/Zi-Q0t4gMC8"
+        width="800"
+        height="450"
+        allow="fullscreen; gyroscope"
+        allowfullscreen
+        title="Interactive JavaScript Demo"
+        style="border: none;">
+    </iframe>
+
+
+    <!-- ===================================================== -->
+    <!-- QUESTION 17 -->
+    <!-- ===================================================== -->
+
+    <h2>Question 17 - Device Control Style Page</h2>
+
+    <div class="side-by-side">
+
+        <iframe
+            src="https://device.example.com"
+            width="45%"
+            height="350"
+            allow="usb"
+            title="USB Device Control">
+        </iframe>
+
+        <iframe
+            src="https://www.youtube-nocookie.com/embed/Zi-Q0t4gMC8"
+            width="45%"
+            height="350"
+            allow="gyroscope"
+            title="JavaScript Interactive Content">
+        </iframe>
+
+    </div>
+
+
+    <!-- ===================================================== -->
+    <!-- QUESTION 18 -->
+    <!-- ===================================================== -->
+
+    <h2>Question 18 - Minimal Fullscreen Permission</h2>
+
+    <iframe
+        src="https://www.youtube-nocookie.com/embed/kUMe1FH4CHE"
+        width="100%"
+        height="500"
+        allow="fullscreen"
+        title="HTML Tutorial With Fullscreen"
+        style="border: none;">
+    </iframe>
+
+
+    <!-- ===================================================== -->
+    <!-- QUESTION 19 -->
+    <!-- ===================================================== -->
+
+    <h2>Question 19 - Allow Versus No Allow</h2>
+
+    <iframe
+        src="https://www.youtube-nocookie.com/embed/kUMe1FH4CHE"
+        width="600"
+        height="350"
+        allow="fullscreen"
+        title="Iframe With Fullscreen Permission"
+        style="border: none;">
+    </iframe>
+
+    <br><br>
+
+    <iframe
+        src="https://www.youtube-nocookie.com/embed/kUMe1FH4CHE"
+        width="600"
+        height="350"
+        title="Iframe Without Permissions"
+        style="border: none;">
+    </iframe>
+
+
+    <!-- ===================================================== -->
+    <!-- QUESTION 20 -->
+    <!-- ===================================================== -->
+
+    <h2>Question 20 - Styled Iframe</h2>
+
+    <iframe
+        class="styled-iframe"
+        src="https://www.youtube-nocookie.com/embed/Zi-Q0t4gMC8"
+        allow="gyroscope"
+        title="Styled JavaScript Tutorial Iframe">
+    </iframe>
+
+
+    <!-- ===================================================== -->
+    <!-- QUESTION 21 -->
+    <!-- ===================================================== -->
+
+    <h2>Question 21 - Button Like Link</h2>
+
+    <a
+        href="https://device.example.com"
+        target="myDeviceFrame"
+        class="device-button">
+        Open Device Content
+    </a>
+
+    <br><br>
+
+    <iframe
+        name="myDeviceFrame"
+        src="https://device.example.com"
+        width="700"
+        height="400"
+        allow="usb"
+        title="USB Device Content"
+        style="border: none;">
+    </iframe>
+
+
+    <!-- ===================================================== -->
+    <!-- QUESTION 22 -->
+    <!-- ===================================================== -->
+
+    <h2>Question 22 - Fullscreen And USB</h2>
+
+    <iframe
+        src="https://www.youtube-nocookie.com/embed/kUMe1FH4CHE"
+        width="700"
+        height="450"
+        allow="fullscreen; usb"
+        title="HTML Video With Fullscreen And USB"
+        style="border: none;">
+    </iframe>
+
+
+    <!-- ===================================================== -->
+    <!-- QUESTION 23 -->
+    <!-- ===================================================== -->
+
+    <h2>Question 23 - Responsive Video Player</h2>
+
+    <div class="video-container">
+
+        <iframe
+            class="responsive-video"
+            src="https://www.youtube-nocookie.com/embed/kUMe1FH4CHE"
+            allow="fullscreen; gyroscope"
+            allowfullscreen
+            title="Responsive HTML Tutorial Video">
+        </iframe>
+
+    </div>
+
+
+    <!-- ===================================================== -->
+    <!-- QUESTION 24 -->
+    <!-- ===================================================== -->
+
+    <h2>Question 24 - Three Iframes</h2>
+
+    <iframe
+        src="https://www.youtube-nocookie.com/embed/kUMe1FH4CHE"
+        width="500"
+        height="300"
+        allow="fullscreen"
+        title="HTML Video With Fullscreen"
+        style="border: none;">
+    </iframe>
+
+    <br><br>
+
+    <iframe
+        src="https://www.youtube-nocookie.com/embed/Zi-Q0t4gMC8"
+        width="600"
+        height="350"
+        allow="gyroscope"
+        title="JavaScript Video With Gyroscope"
+        style="border: none;">
+    </iframe>
+
+    <br><br>
+
+    <iframe
+        src="https://device.example.com"
+        width="700"
+        height="400"
+        allow="usb"
+        title="USB Device Frame"
+        style="border: none;">
+    </iframe>
+
+
+    <!-- ===================================================== -->
+    <!-- QUESTION 25 -->
+    <!-- ===================================================== -->
+
+    <h2>Question 25 - Full Page Iframe Layout</h2>
+
+    <div class="full-page">
+
+        <header>
+            <h3>My Iframe Website</h3>
+        </header>
+
+        <iframe
+            src="https://www.youtube-nocookie.com/embed/kUMe1FH4CHE"
+            allow="fullscreen; gyroscope; usb"
+            title="Full Page HTML Tutorial">
+        </iframe>
+
+    </div>
+
+
+    <!-- ===================================================== -->
+    <!-- QUESTION 26 -->
+    <!-- ===================================================== -->
+
+    <h2>Question 26 - Corrected YouTube Iframe</h2>
+
+    <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube-nocookie.com/embed/kUMe1FH4CHE"
+        allow="fullscreen"
+        allowfullscreen
+        title="Learn HTML - Full Tutorial for Beginners">
+    </iframe>
+
+
+    <!-- ===================================================== -->
+    <!-- QUESTION 27 -->
+    <!-- ===================================================== -->
+
+    <h2>Question 27 - Three Links And Same Iframe</h2>
+
+    <ul>
+
+        <li>
+            <a
+                href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                target="sameFrame">
+                MDN HTML
+            </a>
+        </li>
+
+        <li>
+            <a
+                href="https://www.w3.org/"
+                target="sameFrame">
+                W3C
+            </a>
+        </li>
+
+        <li>
+            <a
+                href="https://www.openstreetmap.org/"
+                target="sameFrame">
+                OpenStreetMap
+            </a>
+        </li>
+
+    </ul>
+
+    <iframe
+        name="sameFrame"
+        src="https://developer.mozilla.org/en-US/docs/Web/HTML"
+        width="100%"
+        height="400"
+        allow="fullscreen"
+        title="Website Navigation Iframe"
+        style="border: none;">
+    </iframe>
+
+
+    <!-- ===================================================== -->
+    <!-- QUESTION 28 -->
+    <!-- ===================================================== -->
+
+    <h2>Question 28 - Modern Iframe Card</h2>
+
+    <div class="iframe-card">
+
+        <iframe
+            src="https://www.youtube-nocookie.com/embed/Zi-Q0t4gMC8"
+            allow="gyroscope"
+            title="Modern JavaScript Tutorial Card">
+        </iframe>
+
+    </div>
+
+
+    <!-- ===================================================== -->
+    <!-- QUESTION 29 -->
+    <!-- ===================================================== -->
+
+    <h2>Question 29 - Permission Comparison</h2>
+
+    <div class="comparison">
+
+        <iframe
+            src="https://www.youtube-nocookie.com/embed/kUMe1FH4CHE"
+            allow="fullscreen"
+            title="Version A - Fullscreen Only">
+        </iframe>
+
+        <iframe
+            src="https://www.youtube-nocookie.com/embed/kUMe1FH4CHE"
+            allow="fullscreen; gyroscope; usb"
+            title="Version B - Fullscreen Gyroscope And USB">
+        </iframe>
+
+    </div>
+
+
+    <!-- ===================================================== -->
+    <!-- QUESTION 30 -->
+    <!-- ===================================================== -->
+
+    <h2>Question 30 - Best Practice Iframe Usage</h2>
+
+
+    <!--
+        This normal webpage does not require special permissions.
+    -->
+    <iframe
+        src="https://developer.mozilla.org/en-US/docs/Web/HTML"
+        width="100%"
+        height="350"
+        title="MDN HTML Documentation"
+        style="border: none;">
+    </iframe>
+
+
+    <br><br>
+
+
+    <!--
+        This video may use fullscreen and gyroscope-related features.
+    -->
+    <iframe
+        src="https://www.youtube-nocookie.com/embed/kUMe1FH4CHE"
+        width="560"
+        height="315"
+        allow="fullscreen; gyroscope"
+        allowfullscreen
+        title="HTML Tutorial Video"
+        style="border: none;">
+    </iframe>
+
+
+    <br><br>
+
+
+    <!--
+        USB permission is included because this example demonstrates
+        an iframe that could communicate with compatible USB devices.
+    -->
+    <iframe
+        src="https://device.example.com"
+        width="600"
+        height="400"
+        allow="usb"
+        title="USB Device Content"
+        style="border: none;">
+    </iframe>
+
+
+</body>
+
+</html>
+
