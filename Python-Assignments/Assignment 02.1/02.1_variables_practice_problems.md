@@ -1,0 +1,53 @@
+18.
+
+Answer:
+
+name → "Rahul"
+age → 18
+city → "Patna"
+
+
+
+19.
+
+The final value of age is 19.
+
+The value is changed because age is reassigned from 18 to 19.
+
+
+
+20.
+
+The final value of name is "Riya".
+
+The previous values are replaced when a new value is assigned to name.
+
+
+
+
+21.
+
+First, student_name stores "Rahul" and student_age stores 18.
+
+Then, student_age is reassigned to 19.
+
+So, the final value of student_age is 19.
+
+
+
+22.
+
+Answer:
+
+a → 10
+b → 20
+c → 30
+
+
+23.
+
+Answer:
+
+x → 100
+y → 100
+z → 100
