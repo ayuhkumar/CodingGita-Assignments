@@ -1,0 +1,2099 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>HTML Forms Assignment</title>
+
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+
+        form {
+            margin-bottom: 30px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        fieldset {
+            margin-bottom: 20px;
+            padding: 15px;
+        }
+
+        input,
+        select,
+        textarea,
+        button {
+            margin: 6px 0;
+            padding: 7px;
+        }
+
+        label {
+            display: inline-block;
+            margin-top: 8px;
+        }
+
+        .question {
+            margin-bottom: 40px;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <h1>HTML Forms Assignment</h1>
+
+
+    <!-- ================================================= -->
+    <!-- QUESTION 1 -->
+    <!-- ================================================= -->
+
+    <div class="question">
+
+        <h2>Question 1 - Basic Form Structure</h2>
+
+        <form
+            action="/submit.php"
+            method="post"
+            autocomplete="on">
+
+            <label for="q1name">Name:</label>
+
+            <input
+                type="text"
+                id="q1name"
+                name="name">
+
+            <br>
+
+            <button type="submit">
+                Submit
+            </button>
+
+        </form>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- QUESTION 2 -->
+    <!-- ================================================= -->
+
+    <div class="question">
+
+        <h2>Question 2 - Form with GET Method</h2>
+
+        <form
+            action="/search"
+            method="get">
+
+            <label for="q2search">
+                Search:
+            </label>
+
+            <input
+                type="search"
+                id="q2search"
+                name="query"
+                placeholder="Search here">
+
+            <br>
+
+            <button type="submit">
+                Search
+            </button>
+
+        </form>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- QUESTION 3 -->
+    <!-- ================================================= -->
+
+    <div class="question">
+
+        <h2>Question 3 - Form Without Browser Validation</h2>
+
+        <form
+            action="/submit.php"
+            method="post"
+            novalidate>
+
+            <label for="q3name">
+                Name:
+            </label>
+
+            <input
+                type="text"
+                id="q3name"
+                name="name"
+                required>
+
+            <br>
+
+            <label for="q3email">
+                Email:
+            </label>
+
+            <input
+                type="email"
+                id="q3email"
+                name="email"
+                required>
+
+            <br>
+
+            <button type="submit">
+                Submit
+            </button>
+
+        </form>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- QUESTION 4 -->
+    <!-- ================================================= -->
+
+    <div class="question">
+
+        <h2>Question 4 - Default Enctype</h2>
+
+        <!--
+            application/x-www-form-urlencoded is the
+            default encoding type used by HTML forms.
+        -->
+
+        <form
+            action="/submit.php"
+            method="post"
+            enctype="application/x-www-form-urlencoded">
+
+            <label for="q4name">
+                Name:
+            </label>
+
+            <input
+                type="text"
+                id="q4name"
+                name="name">
+
+            <br>
+
+            <label for="q4email">
+                Email:
+            </label>
+
+            <input
+                type="email"
+                id="q4email"
+                name="email">
+
+            <br>
+
+            <button type="submit">
+                Submit
+            </button>
+
+        </form>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- QUESTION 5 -->
+    <!-- ================================================= -->
+
+    <div class="question">
+
+        <h2>Question 5 - File Upload Form</h2>
+
+        <form
+            action="/upload.php"
+            method="post"
+            enctype="multipart/form-data">
+
+            <label for="q5file">
+                Choose File:
+            </label>
+
+            <input
+                type="file"
+                id="q5file"
+                name="file">
+
+            <br>
+
+            <button type="submit">
+                Upload File
+            </button>
+
+        </form>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- QUESTION 6 -->
+    <!-- ================================================= -->
+
+    <div class="question">
+
+        <h2>Question 6 - text/plain Encoding</h2>
+
+        <form
+            action="/submit.php"
+            method="post"
+            enctype="text/plain">
+
+            <label for="q6name">
+                Name:
+            </label>
+
+            <input
+                type="text"
+                id="q6name"
+                name="name">
+
+            <br>
+
+            <label for="q6message">
+                Message:
+            </label>
+
+            <input
+                type="text"
+                id="q6message"
+                name="message">
+
+            <br>
+
+            <button type="submit">
+                Submit
+            </button>
+
+        </form>
+
+        <p>
+            Note: text/plain encoding is rarely used in real-world projects.
+        </p>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- QUESTION 7 -->
+    <!-- ================================================= -->
+
+    <div class="question">
+
+        <h2>Question 7 - Form Name And Target</h2>
+
+        <form
+            name="userForm"
+            action="/submit.php"
+            method="post"
+            target="_blank">
+
+            <label for="q7name">
+                Name:
+            </label>
+
+            <input
+                type="text"
+                id="q7name"
+                name="name">
+
+            <br>
+
+            <button type="submit">
+                Submit
+            </button>
+
+        </form>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- QUESTION 8 -->
+    <!-- ================================================= -->
+
+    <div class="question">
+
+        <h2>Question 8 - Proper Use Of Label</h2>
+
+        <form>
+
+            <label for="email">
+                Email:
+            </label>
+
+            <input
+                type="email"
+                id="email"
+                name="email">
+
+            <br>
+
+            <button type="submit">
+                Submit
+            </button>
+
+        </form>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- QUESTION 9 -->
+    <!-- ================================================= -->
+
+    <div class="question">
+
+        <h2>Question 9 - Radio Button Group</h2>
+
+        <form>
+
+            <p>Gender:</p>
+
+            <input
+                type="radio"
+                id="male"
+                name="gender"
+                value="male"
+                checked>
+
+            <label for="male">
+                Male
+            </label>
+
+            <br>
+
+            <input
+                type="radio"
+                id="female"
+                name="gender"
+                value="female">
+
+            <label for="female">
+                Female
+            </label>
+
+            <br>
+
+            <button type="submit">
+                Submit
+            </button>
+
+        </form>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- QUESTION 10 -->
+    <!-- ================================================= -->
+
+    <div class="question">
+
+        <h2>Question 10 - Multiple Checkboxes</h2>
+
+        <form>
+
+            <p>Select your hobbies:</p>
+
+            <input
+                type="checkbox"
+                id="gaming"
+                name="hobbies"
+                value="gaming"
+                checked>
+
+            <label for="gaming">
+                Gaming
+            </label>
+
+            <br>
+
+            <input
+                type="checkbox"
+                id="coding"
+                name="hobbies"
+                value="coding">
+
+            <label for="coding">
+                Coding
+            </label>
+
+            <br>
+
+            <input
+                type="checkbox"
+                id="reading"
+                name="hobbies"
+                value="reading">
+
+            <label for="reading">
+                Reading
+            </label>
+
+            <br>
+
+            <input
+                type="checkbox"
+                id="travel"
+                name="hobbies"
+                value="travel">
+
+            <label for="travel">
+                Travelling
+            </label>
+
+            <br>
+
+            <button type="submit">
+                Submit
+            </button>
+
+        </form>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- QUESTION 11 -->
+    <!-- ================================================= -->
+
+    <div class="question">
+
+        <h2>Question 11 - Drop-down List</h2>
+
+        <form>
+
+            <label for="cars">
+                Select Car:
+            </label>
+
+            <select
+                id="cars"
+                name="cars">
+
+                <option value="toyota">
+                    Toyota
+                </option>
+
+                <option value="honda">
+                    Honda
+                </option>
+
+                <option value="bmw">
+                    BMW
+                </option>
+
+                <option value="ford">
+                    Ford
+                </option>
+
+            </select>
+
+            <br>
+
+            <button type="submit">
+                Submit
+            </button>
+
+        </form>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- QUESTION 12 -->
+    <!-- ================================================= -->
+
+    <div class="question">
+
+        <h2>Question 12 - Multi-select Drop-down</h2>
+
+        <form>
+
+            <label for="q12courses">
+                Select Courses:
+            </label>
+
+            <br>
+
+            <select
+                id="q12courses"
+                name="courses"
+                multiple
+                size="3">
+
+                <option value="html">
+                    HTML
+                </option>
+
+                <option value="css">
+                    CSS
+                </option>
+
+                <option value="javascript">
+                    JavaScript
+                </option>
+
+                <option value="python">
+                    Python
+                </option>
+
+                <option value="java">
+                    Java
+                </option>
+
+            </select>
+
+            <br>
+
+            <button type="submit">
+                Submit
+            </button>
+
+        </form>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- QUESTION 13 -->
+    <!-- ================================================= -->
+
+    <div class="question">
+
+        <h2>Question 13 - Grouped Options</h2>
+
+        <form>
+
+            <label for="fruits">
+                Select Fruit:
+            </label>
+
+            <select
+                id="fruits"
+                name="fruits">
+
+                <optgroup label="Citrus Fruits">
+
+                    <option value="orange">
+                        Orange
+                    </option>
+
+                    <option value="lemon">
+                        Lemon
+                    </option>
+
+                </optgroup>
+
+
+                <optgroup label="Tropical Fruits">
+
+                    <option value="mango">
+                        Mango
+                    </option>
+
+                    <option value="pineapple">
+                        Pineapple
+                    </option>
+
+                </optgroup>
+
+            </select>
+
+            <br>
+
+            <button type="submit">
+                Submit
+            </button>
+
+        </form>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- QUESTION 14 -->
+    <!-- ================================================= -->
+
+    <div class="question">
+
+        <h2>Question 14 - Multi-line Text Area</h2>
+
+        <form>
+
+            <label for="comments">
+                Comments:
+            </label>
+
+            <br>
+
+            <textarea
+                id="comments"
+                name="comments"
+                rows="4"
+                cols="50"
+                placeholder="Write your comments here..."></textarea>
+
+            <br>
+
+            <button type="submit">
+                Submit
+            </button>
+
+        </form>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- QUESTION 15 -->
+    <!-- ================================================= -->
+
+    <div class="question">
+
+        <h2>Question 15 - Button Types</h2>
+
+        <form>
+
+            <button type="submit">
+                Submit
+            </button>
+
+            <button type="reset">
+                Reset
+            </button>
+
+            <button type="button"
+                    onclick="alert('Button clicked!')">
+                Normal Button
+            </button>
+
+        </form>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- QUESTION 16 -->
+    <!-- ================================================= -->
+
+    <div class="question">
+
+        <h2>Question 16 - Fieldset And Legend</h2>
+
+        <form>
+
+            <fieldset>
+
+                <legend>
+                    Personal Information
+                </legend>
+
+                <label for="q16name">
+                    Name:
+                </label>
+
+                <input
+                    type="text"
+                    id="q16name"
+                    name="name">
+
+                <br>
+
+                <label for="q16age">
+                    Age:
+                </label>
+
+                <input
+                    type="number"
+                    id="q16age"
+                    name="age">
+
+            </fieldset>
+
+            <button type="submit">
+                Submit
+            </button>
+
+        </form>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- QUESTION 17 -->
+    <!-- ================================================= -->
+
+    <div class="question">
+
+        <h2>Question 17 - Disabled Fieldset</h2>
+
+        <form>
+
+            <fieldset disabled>
+
+                <legend>
+                    Account Information
+                </legend>
+
+                <label for="q17username">
+                    Username:
+                </label>
+
+                <input
+                    type="text"
+                    id="q17username"
+                    name="username">
+
+                <br>
+
+                <label for="q17password">
+                    Password:
+                </label>
+
+                <input
+                    type="password"
+                    id="q17password"
+                    name="password">
+
+            </fieldset>
+
+        </form>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- QUESTION 18 -->
+    <!-- ================================================= -->
+
+    <div class="question">
+
+        <h2>Question 18 - Datalist</h2>
+
+        <form>
+
+            <label for="browser">
+                Choose Browser:
+            </label>
+
+            <input
+                list="browsers"
+                id="browser"
+                name="browser">
+
+            <datalist id="browsers">
+
+                <option value="Google Chrome">
+                <option value="Microsoft Edge">
+                <option value="Mozilla Firefox">
+                <option value="Safari">
+
+            </datalist>
+
+            <br>
+
+            <button type="submit">
+                Submit
+            </button>
+
+        </form>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- QUESTION 19 -->
+    <!-- ================================================= -->
+
+    <div class="question">
+
+        <h2>Question 19 - Password Field With Constraints</h2>
+
+        <form>
+
+            <label for="q19password">
+                Password:
+            </label>
+
+            <input
+                type="password"
+                id="q19password"
+                name="password"
+                required
+                minlength="8">
+
+            <br>
+
+            <button type="submit">
+                Submit
+            </button>
+
+        </form>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- QUESTION 20 -->
+    <!-- ================================================= -->
+
+    <div class="question">
+
+        <h2>Question 20 - Multiple Email Values</h2>
+
+        <form>
+
+            <label for="q20email">
+                Email Addresses:
+            </label>
+
+            <input
+                type="email"
+                id="q20email"
+                name="email"
+                multiple
+                placeholder="email1@example.com, email2@example.com">
+
+            <br>
+
+            <button type="submit">
+                Submit
+            </button>
+
+        </form>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- QUESTION 21 -->
+    <!-- ================================================= -->
+
+    <div class="question">
+
+        <h2>Question 21 - Date Picker With Range</h2>
+
+        <form>
+
+            <label for="q21date">
+                Select Date:
+            </label>
+
+            <input
+                type="date"
+                id="q21date"
+                name="date"
+                min="2023-01-01"
+                max="2023-12-31">
+
+            <br>
+
+            <button type="submit">
+                Submit
+            </button>
+
+        </form>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- QUESTION 22 -->
+    <!-- ================================================= -->
+
+    <div class="question">
+
+        <h2>Question 22 - Number Input With Step</h2>
+
+        <form>
+
+            <label for="quantity">
+                Quantity:
+            </label>
+
+            <input
+                type="number"
+                id="quantity"
+                name="quantity"
+                min="1"
+                max="10"
+                step="1">
+
+            <br>
+
+            <button type="submit">
+                Submit
+            </button>
+
+        </form>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- QUESTION 23 -->
+    <!-- ================================================= -->
+
+    <div class="question">
+
+        <h2>Question 23 - Range Slider</h2>
+
+        <form>
+
+            <label for="volume">
+                Volume:
+            </label>
+
+            <input
+                type="range"
+                id="volume"
+                name="volume"
+                min="0"
+                max="100"
+                value="50">
+
+            <br>
+
+            <button type="submit">
+                Submit
+            </button>
+
+        </form>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- QUESTION 24 -->
+    <!-- ================================================= -->
+
+    <div class="question">
+
+        <h2>Question 24 - Restricted File Input</h2>
+
+        <form
+            action="/upload.php"
+            method="post"
+            enctype="multipart/form-data">
+
+            <label for="q24file">
+                Upload Document:
+            </label>
+
+            <input
+                type="file"
+                id="q24file"
+                name="document"
+                accept=".pdf,.docx"
+                required>
+
+            <br>
+
+            <button type="submit">
+                Upload
+            </button>
+
+        </form>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- QUESTION 25 -->
+    <!-- ================================================= -->
+
+    <div class="question">
+
+        <h2>Question 25 - Hidden Input</h2>
+
+        <form>
+
+            <input
+                type="hidden"
+                name="session_token"
+                value="ABC123XYZ">
+
+            <label for="q25name">
+                Name:
+            </label>
+
+            <input
+                type="text"
+                id="q25name"
+                name="name">
+
+            <br>
+
+            <button type="submit">
+                Submit
+            </button>
+
+        </form>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- QUESTION 26 -->
+    <!-- ================================================= -->
+
+    <div class="question">
+
+        <h2>Question 26 - Color Picker</h2>
+
+        <form>
+
+            <label for="color">
+                Favorite Color:
+            </label>
+
+            <input
+                type="color"
+                id="color"
+                name="color"
+                value="#ff0000">
+
+            <br>
+
+            <button type="submit">
+                Submit
+            </button>
+
+        </form>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- QUESTION 27 -->
+    <!-- ================================================= -->
+
+    <div class="question">
+
+        <h2>Question 27 - Telephone Input With Pattern</h2>
+
+        <form>
+
+            <label for="phone">
+                Phone Number:
+            </label>
+
+            <input
+                type="tel"
+                id="phone"
+                name="phone"
+                pattern="[0-9]{10}"
+                placeholder="Enter 10 digit phone number">
+
+            <br>
+
+            <button type="submit">
+                Submit
+            </button>
+
+        </form>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- QUESTION 28 -->
+    <!-- ================================================= -->
+
+    <div class="question">
+
+        <h2>Question 28 - URL Input</h2>
+
+        <form>
+
+            <label for="website">
+                Website:
+            </label>
+
+            <input
+                type="url"
+                id="website"
+                name="website"
+                required
+                placeholder="https://example.com">
+
+            <br>
+
+            <button type="submit">
+                Submit
+            </button>
+
+        </form>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- QUESTION 29 -->
+    <!-- ================================================= -->
+
+    <div class="question">
+
+        <h2>Question 29 - Search With Autofocus</h2>
+
+        <form>
+
+            <label for="q29search">
+                Search:
+            </label>
+
+            <input
+                type="search"
+                id="q29search"
+                name="search"
+                autofocus
+                placeholder="Search here...">
+
+            <br>
+
+            <button type="submit">
+                Search
+            </button>
+
+        </form>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- QUESTION 30 -->
+    <!-- ================================================= -->
+
+    <div class="question">
+
+        <h2>Question 30 - Input Outside Form</h2>
+
+        <form
+            id="outsideForm"
+            action="/submit.php"
+            method="post">
+
+            <button type="submit">
+                Submit Form
+            </button>
+
+        </form>
+
+        <br>
+
+        <label for="q30input">
+            Input Outside Form:
+        </label>
+
+        <input
+            type="text"
+            id="q30input"
+            name="outsideInput"
+            form="outsideForm"
+            placeholder="This input belongs to the form">
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- QUESTION 31 -->
+    <!-- ================================================= -->
+
+    <div class="question">
+
+        <h2>Question 31 - formaction Override</h2>
+
+        <form
+            action="/default-submit.php"
+            method="post">
+
+            <label for="q31name">
+                Name:
+            </label>
+
+            <input
+                type="text"
+                id="q31name"
+                name="name">
+
+            <br>
+
+            <div class="button-group">
+
+                <button type="submit">
+                    Default Submit
+                </button>
+
+                <button
+                    type="submit"
+                    formaction="/special-submit.php">
+
+                    Submit To Different URL
+
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- QUESTION 32 -->
+    <!-- ================================================= -->
+
+    <div class="question">
+
+        <h2>Question 32 - formmethod Override</h2>
+
+        <form
+            action="/submit.php"
+            method="post">
+
+            <label for="q32name">
+                Name:
+            </label>
+
+            <input
+                type="text"
+                id="q32name"
+                name="name">
+
+            <br>
+
+            <button type="submit">
+                Submit With POST
+            </button>
+
+            <button
+                type="submit"
+                formmethod="get">
+
+                Submit With GET
+
+            </button>
+
+        </form>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- QUESTION 33 -->
+    <!-- ================================================= -->
+
+    <div class="question">
+
+        <h2>Question 33 - formnovalidate</h2>
+
+        <form
+            action="/register.php"
+            method="post">
+
+            <label for="q33name">
+                Name:
+            </label>
+
+            <input
+                type="text"
+                id="q33name"
+                name="name"
+                required>
+
+            <br>
+
+            <label for="q33email">
+                Email:
+            </label>
+
+            <input
+                type="email"
+                id="q33email"
+                name="email"
+                required>
+
+            <br>
+
+            <div class="button-group">
+
+                <button type="submit">
+                    Register
+                </button>
+
+                <button
+                    type="submit"
+                    formnovalidate>
+
+                    Save as Draft
+
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- QUESTION 34 -->
+    <!-- ================================================= -->
+
+    <div class="question">
+
+        <h2>Question 34 - formtarget</h2>
+
+        <form
+            action="/submit.php"
+            method="post"
+            target="_self">
+
+            <label for="q34name">
+                Name:
+            </label>
+
+            <input
+                type="text"
+                id="q34name"
+                name="name">
+
+            <br>
+
+            <button type="submit">
+                Submit
+            </button>
+
+            <button
+                type="submit"
+                formtarget="_blank">
+
+                Preview In New Tab
+
+            </button>
+
+        </form>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- QUESTION 35 -->
+    <!-- ================================================= -->
+
+    <div class="question">
+
+        <h2>Question 35 - Complete Login Form</h2>
+
+        <form
+            action="/login.php"
+            method="post">
+
+            <fieldset>
+
+                <legend>
+                    Login
+                </legend>
+
+                <label for="username">
+                    Username:
+                </label>
+
+                <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    required>
+
+                <br>
+
+                <label for="password">
+                    Password:
+                </label>
+
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    required
+                    minlength="8">
+
+                <br>
+
+                <button type="submit">
+                    Login
+                </button>
+
+            </fieldset>
+
+        </form>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- QUESTION 36 -->
+    <!-- ================================================= -->
+
+    <div class="question">
+
+        <h2>Question 36 - Registration Form With Fieldsets</h2>
+
+        <form
+            action="/register.php"
+            method="post">
+
+            <fieldset>
+
+                <legend>
+                    Personal Information
+                </legend>
+
+                <label for="q36name">
+                    Name:
+                </label>
+
+                <input
+                    type="text"
+                    id="q36name"
+                    name="name"
+                    required>
+
+                <br>
+
+                <label for="q36email">
+                    Email:
+                </label>
+
+                <input
+                    type="email"
+                    id="q36email"
+                    name="email"
+                    required>
+
+            </fieldset>
+
+
+            <fieldset>
+
+                <legend>
+                    Preferences
+                </legend>
+
+                <input
+                    type="checkbox"
+                    id="newsletter"
+                    name="newsletter"
+                    value="yes">
+
+                <label for="newsletter">
+                    Subscribe to newsletter
+                </label>
+
+            </fieldset>
+
+
+            <button type="submit">
+                Register
+            </button>
+
+        </form>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- QUESTION 37 -->
+    <!-- ================================================= -->
+
+    <div class="question">
+
+        <h2>Question 37 - Contact Us Form</h2>
+
+        <form
+            action="/contact.php"
+            method="post">
+
+            <label for="q37name">
+                Name:
+            </label>
+
+            <input
+                type="text"
+                id="q37name"
+                name="name"
+                required>
+
+            <br>
+
+            <label for="q37email">
+                Email:
+            </label>
+
+            <input
+                type="email"
+                id="q37email"
+                name="email"
+                required>
+
+            <br>
+
+            <label for="q37message">
+                Message:
+            </label>
+
+            <br>
+
+            <textarea
+                id="q37message"
+                name="message"
+                rows="6"
+                cols="50"
+                required
+                placeholder="Write your message here..."></textarea>
+
+            <br>
+
+            <button type="submit">
+                Send Message
+            </button>
+
+        </form>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- QUESTION 38 -->
+    <!-- ================================================= -->
+
+    <div class="question">
+
+        <h2>Question 38 - Survey / Feedback Form</h2>
+
+        <form
+            action="/feedback.php"
+            method="post">
+
+            <label for="satisfaction">
+                Satisfaction Level:
+            </label>
+
+            <input
+                type="range"
+                id="satisfaction"
+                name="satisfaction"
+                min="1"
+                max="10"
+                value="5">
+
+            <br><br>
+
+            <p>
+                Would you recommend us?
+            </p>
+
+            <input
+                type="radio"
+                id="recommendYes"
+                name="recommend"
+                value="yes">
+
+            <label for="recommendYes">
+                Yes
+            </label>
+
+            <br>
+
+            <input
+                type="radio"
+                id="recommendNo"
+                name="recommend"
+                value="no">
+
+            <label for="recommendNo">
+                No
+            </label>
+
+            <br><br>
+
+            <label for="feedback">
+                Comments:
+            </label>
+
+            <br>
+
+            <textarea
+                id="feedback"
+                name="feedback"
+                rows="5"
+                cols="50"
+                placeholder="Write your feedback..."></textarea>
+
+            <br>
+
+            <button type="submit">
+                Submit Feedback
+            </button>
+
+        </form>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- QUESTION 39 -->
+    <!-- ================================================= -->
+
+    <div class="question">
+
+        <h2>Question 39 - Complete File Upload Form</h2>
+
+        <form
+            action="/upload-resume.php"
+            method="post"
+            enctype="multipart/form-data">
+
+            <label for="resume">
+                Resume:
+            </label>
+
+            <input
+                type="file"
+                id="resume"
+                name="resume"
+                accept=".pdf,.docx"
+                required>
+
+            <br>
+
+            <label for="profilePhoto">
+                Profile Photo:
+            </label>
+
+            <input
+                type="file"
+                id="profilePhoto"
+                name="profilePhoto"
+                accept="image/*">
+
+            <br>
+
+            <button type="submit">
+                Upload Files
+            </button>
+
+        </form>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- QUESTION 40 -->
+    <!-- ================================================= -->
+
+    <div class="question">
+
+        <h2>Question 40 - Search Form Using GET</h2>
+
+        <form
+            action="/search"
+            method="get">
+
+            <label for="q40search">
+                Search:
+            </label>
+
+            <input
+                type="search"
+                id="q40search"
+                name="q"
+                autofocus
+                placeholder="Search the website...">
+
+            <br>
+
+            <button type="submit">
+                Search
+            </button>
+
+        </form>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- QUESTION 41 -->
+    <!-- ================================================= -->
+
+    <div class="question">
+
+        <h2>Question 41 - Advanced Job Application Form</h2>
+
+        <form
+            action="/job-application.php"
+            method="post"
+            enctype="multipart/form-data">
+
+
+            <fieldset>
+
+                <legend>
+                    Personal Details
+                </legend>
+
+
+                <label for="q41name">
+                    Full Name:
+                </label>
+
+                <input
+                    type="text"
+                    id="q41name"
+                    name="name"
+                    required>
+
+                <br>
+
+
+                <label for="q41email">
+                    Email:
+                </label>
+
+                <input
+                    type="email"
+                    id="q41email"
+                    name="email"
+                    required>
+
+                <br>
+
+
+                <label for="q41phone">
+                    Phone:
+                </label>
+
+                <input
+                    type="tel"
+                    id="q41phone"
+                    name="phone"
+                    pattern="[0-9]{10}"
+                    placeholder="10 digit phone number"
+                    required>
+
+            </fieldset>
+
+
+            <fieldset>
+
+                <legend>
+                    Experience
+                </legend>
+
+
+                <label for="experience">
+                    Work Experience:
+                </label>
+
+                <br>
+
+                <textarea
+                    id="experience"
+                    name="experience"
+                    rows="6"
+                    cols="50"
+                    required
+                    placeholder="Describe your experience..."></textarea>
+
+            </fieldset>
+
+
+            <fieldset>
+
+                <legend>
+                    Resume
+                </legend>
+
+
+                <label for="q41resume">
+                    Upload Resume:
+                </label>
+
+                <input
+                    type="file"
+                    id="q41resume"
+                    name="resume"
+                    accept=".pdf"
+                    required>
+
+            </fieldset>
+
+
+            <fieldset>
+
+                <legend>
+                    Employment Type
+                </legend>
+
+
+                <input
+                    type="radio"
+                    id="fulltime"
+                    name="employment"
+                    value="full-time"
+                    checked>
+
+                <label for="fulltime">
+                    Full Time
+                </label>
+
+                <br>
+
+
+                <input
+                    type="radio"
+                    id="parttime"
+                    name="employment"
+                    value="part-time">
+
+                <label for="parttime">
+                    Part Time
+                </label>
+
+                <br>
+
+
+                <input
+                    type="radio"
+                    id="internship"
+                    name="employment"
+                    value="internship">
+
+                <label for="internship">
+                    Internship
+                </label>
+
+            </fieldset>
+
+
+            <input
+                type="checkbox"
+                id="terms"
+                name="terms"
+                value="accepted"
+                required>
+
+            <label for="terms">
+                I agree to the terms and conditions.
+            </label>
+
+            <br><br>
+
+
+            <button type="submit">
+                Submit Application
+            </button>
+
+
+            <button
+                type="submit"
+                formnovalidate>
+
+                Save Draft
+
+            </button>
+
+        </form>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- QUESTION 42 -->
+    <!-- ================================================= -->
+
+    <div class="question">
+
+        <h2>Question 42 - Major Form Override Attributes</h2>
+
+        <form
+            id="overrideForm"
+            action="/default-submit.php"
+            method="post"
+            target="_self">
+
+            <label for="q42name">
+                Name:
+            </label>
+
+            <input
+                type="text"
+                id="q42name"
+                name="name"
+                required>
+
+            <br>
+
+            <label for="q42email">
+                Email:
+            </label>
+
+            <input
+                type="email"
+                id="q42email"
+                name="email"
+                required>
+
+            <br><br>
+
+
+            <!-- Default action, method and target -->
+
+            <button type="submit">
+                Default Submit
+            </button>
+
+
+            <!-- formaction override -->
+
+            <button
+                type="submit"
+                formaction="/alternative-submit.php">
+
+                Different Action
+
+            </button>
+
+
+            <!-- formmethod override -->
+
+            <button
+                type="submit"
+                formmethod="get">
+
+                Submit With GET
+
+            </button>
+
+
+            <!-- formnovalidate override -->
+
+            <button
+                type="submit"
+                formnovalidate>
+
+                Skip Validation
+
+            </button>
+
+
+            <!-- formtarget override -->
+
+            <button
+                type="submit"
+                formtarget="_blank">
+
+                Open In New Tab
+
+            </button>
+
+        </form>
+
+    </div>
+
+
+
+    <!-- ================================================= -->
+    <!-- FOOTER -->
+    <!-- ================================================= -->
+
+    <hr>
+
+    <footer>
+
+        <p>
+            HTML Forms Assignment - Semester 1
+        </p>
+
+        <p>
+            All 42 questions completed.
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
