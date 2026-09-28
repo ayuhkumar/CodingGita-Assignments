@@ -2,95 +2,111 @@
 # Assignment: Introduction to JavaScript
 ---
 
-## Section A: Short Answer Questions (1 Mark each)
+SECTION A – SHORT ANSWERS
 
-**Q1.** What is JavaScript?
+Q1. JavaScript is a high-level programming language used to make web
+pages interactive and dynamic.
 
-**Q2.** Who created JavaScript and in which year?
+Q2. JavaScript was created by Brendan Eich in 1995.
 
-**Q3.** What was the original name of JavaScript?
+Q3. Its original name was Mocha. It was later called LiveScript and then
+JavaScript.
 
-**Q4.** Is JavaScript the same as Java? Give one major difference.
+Q4. No, JavaScript and Java are different languages. Java is mainly
+class-based, while JavaScript is mainly prototype-based.
 
-**Q5.** What does it mean when we 
+Q5. High-level means JavaScript is easy for humans to read and write and
+hides many low-level computer details.
 
+Q6. JavaScript is commonly called an interpreted language, but modern
+engines also use JIT compilation to make it faster.
 
-**Q6.** Is JavaScript a compiled language or an interpreted language? Explain briefly.
+Q7. Chrome – V8 Firefox – SpiderMonkey Safari – JavaScriptCore
 
-**Q7.** Name the JavaScript engines used by the following browsers:
-- Google Chrome
-- Mozilla Firefox
-- Apple Safari
+Q8. Dynamic typing means a variable can store different types of values
+at different times without declaring its type first.
 
-**Q8.** What is **Dynamic Typing** in JavaScript?
+Q9. Static website shows mostly fixed content. Dynamic website can
+change its content or behaviour based on users, data or actions.
 
-**Q9.** What is the main difference between a **static** website and a **dynamic** website?
+Q10. HTML – gives structure to the webpage. CSS – gives style and
+design. JavaScript – adds behaviour and interaction.
 
-**Q10.** Name the three pillars of Front-end Web Development and write one line about each.
+Q11. Frontend is the part the user sees and uses. Backend works behind
+the scenes with servers, databases and application logic.
 
-**Q11.** What is the difference between Frontend and Backend?
+Q12. Node.js is a runtime that allows JavaScript to run outside the
+browser, especially on servers.
 
-**Q12.** What is Node.js?
+Q13. ECMAScript is the standard/specification that defines how
+JavaScript should work. JavaScript is an implementation of ECMAScript
+with additional features.
 
-**Q13.** Explain **ECMAScript**. What is its relation with JavaScript?
+SECTION B – TRUE OR FALSE
 
----
-<img width="675" height="846" alt="download" src="https://github.com/user-attachments/assets/945c532d-c67e-4b6f-8a9d-f8d6f611904a" />
-<img width="675" height="846" alt="download" src="https://github.com/user-attachments/assets/c2efc999-5109-4a0d-99b6-e9176933979c" />
-<img width="675" height="846" alt="download" src="https://github.com/user-attachments/assets/76b9379e-9be0-4155-bb6d-2c5f396ece39" />
+1.  False – JavaScript is dynamically typed.
 
-## Section B: True or False  
-(Write True or False. If False, correct the statement)
+2.  False – JavaScript can also run outside browsers using environments
+    like Node.js.
 
-1. JavaScript is a statically typed language.
-2. JavaScript can only run inside the browser.
-3. HTML is responsible for the behaviour of a webpage.
-4. Node.js allows JavaScript to run outside the browser.
-5. JavaScript is case-insensitive.
-6. `let name` and `let Name` are the same variable.
-7. ECMAScript is a programming language.
-8. React, Angular, and Vue.js are used for Backend development.
+3.  False – HTML gives structure. JavaScript is mainly used for
+    behaviour and interaction.
 
----
+4.  True.
 
+5.  False – JavaScript is case-sensitive.
 
-<img width="675" height="846" alt="download" src="https://github.com/user-attachments/assets/cdace830-430d-4f05-87a0-1f5e6b90c855" />
+6.  False – name and Name are different variables.
 
+7.  False – ECMAScript is a language standard/specification, not a
+    programming language itself.
 
-## Section C: Fill in the Blanks
+8.  False – React, Angular and Vue.js are mainly used for frontend
+    development.
 
-1. JavaScript was created by ______________ in the year ______________.
-2. The three technologies used in Front-end development are __________, __________, and __________.
-3. JavaScript engines: Chrome uses __________, Firefox uses __________.
-4. In the restaurant analogy: Customer = __________, Waiter = __________, Chef = __________.
-5. JavaScript file extension is __________.
+SECTION C – FILL IN THE BLANKS
 
----
+1.  Brendan Eich, 1995
 
+2.  HTML, CSS, JavaScript
 
+3.  V8, SpiderMonkey
 
-## Section D: Conceptual Questions (2 Marks each)
+4.  Customer = Frontend user, Waiter = API, Chef = Backend
 
-**Q14.** Differentiate between a **static website** and a **dynamic website**. Give one real-world example of each.
+5.  .js
 
-**Q15.** Explain any two features of JavaScript that make it suitable for creating interactive web pages.
+SECTION D – CONCEPTUAL QUESTIONS
 
-**Q16.** List any four areas (apart from web browsers) where JavaScript is used today. Mention one popular framework/library for each (if applicable).
+Q14. Static website: Content is mostly fixed and changes only when the
+code is changed. Example: a simple personal portfolio.
 
-**Q17.** What is the difference between writing JavaScript code:
-- Inside an HTML file using `<script>` tag, and
-- In an external `.js` file?  
-Mention two advantages of using an external JavaScript file.
+Dynamic website: Content can change according to users, data or actions.
+Example: Amazon or a social media website.
 
-**Q18.** Explain the difference between Frontend and Backend using the **restaurant analogy** in your own words.
+Q15. 1. JavaScript responds to events like clicks, typing and mouse
+movement. 2. It can change HTML and CSS without reloading the whole
+page.
 
-**Q19.** Why should a beginner learn JavaScript? Write at least 4 points.
+Q16. 1. Server-side development – Node.js 2. Mobile apps – React Native
+3. Desktop apps – Electron 4. Game development – Phaser
 
----
-<img width="675" height="846" alt="download" src="https://github.com/user-attachments/assets/6a6dabad-4741-4635-a174-53a6f5593ada" />
-<img width="675" height="846" alt="download" src="https://github.com/user-attachments/assets/6a4346c2-69f6-40f2-92c0-f7dc15e477fe" />
-<img width="675" height="846" alt="download" src="https://github.com/user-attachments/assets/35334781-09ba-4132-97a3-c7020ba1612e" />
+Q17. JavaScript can be written directly inside an HTML file using
+, or stored separately in a .js file and linked to HTML.
 
+Advantages of external JS: 1. Code can be reused on many pages. 2. HTML
+stays cleaner and easier to manage.
+
+Q18. In a restaurant, the frontend is like the dining area and menu that
+the customer sees and uses. The backend is like the kitchen where the
+actual work is done. The waiter can be compared to an API because it
+carries requests and responses between the customer and kitchen.
+
+Q19. 1. JavaScript makes webpages interactive. 2. It is useful for
+frontend and backend development. 3. It has many libraries and
+frameworks. 4. It is widely used in web, mobile, desktop and other
+applications. 5. It is a good foundation for learning modern web
+development.
 
 
 
