@@ -108,5 +108,53 @@ frameworks. 4. It is widely used in web, mobile, desktop and other
 applications. 5. It is a good foundation for learning modern web
 development.
 
+Section E: Code-Based Questions (3 Marks each)
+
+Q20.<img width="727" height="243" alt="image" src="https://github.com/user-attachments/assets/927aff52-657a-465d-a544-b0c7ee5dbff5" />
+
+Q21.<img width="1312" height="737" alt="image" src="https://github.com/user-attachments/assets/4483f5f2-e83b-4179-aa8d-fddaa503d02a" />
+
+Q22.<img width="1017" height="587" alt="image" src="https://github.com/user-attachments/assets/808b47ac-e0cb-40c1-87ce-9cd3bc1a9e08" />
+
+Section F: Practical / Application Based (5 Marks)
+``` <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>My First JavaScript Page</h1>
+
+    <button onclick="changePage()">Click Me</button>
+
+    <script>
+        console.log("JavaScript is running successfully!");
+
+        function changePage() {
+            alert("Hello, B.Tech Student!");
+            document.body.style.backgroundColor = "lightblue";
+        }
+    </script>
+
+    
+</body>
+</html>
+
+```
 
 
+
+
+
+
+
+
+Section G: Higher Order Thinking (Bonus - 3 Marks)
+
+Q24. JavaScript became popular because it is easy to learn, works in all major browsers, and has many libraries and frameworks. 
+Node.js allowed JavaScript to run outside the browser, so it could also be used for backend and server-side development. 
+ECMAScript updates added new features and improvements to the language. 
+Because of this, JavaScript is now used for web, mobile, desktop, and many other types of applications.
