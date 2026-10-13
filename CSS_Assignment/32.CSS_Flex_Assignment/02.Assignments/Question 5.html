@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyApp</title>
+
+    <style>
+        
+        * {
+        box-sizing: border-box;
+        }
+
+        html,
+        body {
+        margin: 0;
+        min-height: 100%;
+        }
+
+        .app {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        }
+
+        .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background: #222;
+        color: white;
+        }
+
+        .header h2 {
+        margin: 0;
+        }
+
+        .header nav {
+        display: flex;
+        gap: 20px;
+        }
+
+        .header nav a {
+        color: white;
+        text-decoration: none;
+        }
+
+        .main {
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+        gap: 20px;
+        padding: 20px;
+        }
+
+        .sidebar {
+        flex: 0 0 250px;
+        padding: 15px;
+        background: #eee;
+        }
+
+        .content {
+        flex: 1 1 0;
+        min-width: 0;
+        padding: 15px;
+        background: #f5f5f5;
+        }
+
+        .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        background: #222;
+        color: white;
+        text-align: center;
+        }
+
+        .footer p {
+        margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+  <div class="app">
+    <header class="header">
+      <h2>MyApp</h2>
+
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+
+    <main class="main">
+      <aside class="sidebar">
+        <h3>Categories</h3>
+        <p>Web Development</p>
+        <p>Design</p>
+        <p>Programming</p>
+      </aside>
+
+      <section class="content">
+        <h1>Welcome to MyApp</h1>
+        <p>Learn and build amazing projects.</p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 MyApp</p>
+    </footer>
+  </div>
+</body>
+</html>

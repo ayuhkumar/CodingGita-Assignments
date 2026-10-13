@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IND VS PAK</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: black;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        .main {
+            height: 440px;
+            background: linear-gradient(to bottom, #061326, #102b42, #101010);
+            text-align: center;
+            padding-top: 30px;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            line-height: 25px;
+            margin-bottom: 75px;
+        }
+
+        .logo span {
+            display: block;
+        }
+
+        .teams {
+            display: flex;
+            justify-content: center;
+            gap: 90px;
+        }
+
+        .team {
+            width: 430px;
+            height: 350px;
+            border-radius: 22px;
+            padding-top: 45px;
+            box-sizing: border-box;
+        }
+
+        .india {
+            background-color: #0875dc;
+        }
+
+        .pakistan {
+            background-color: #39c900;
+        }
+
+        .team h1 {
+            font-size: 80px;
+            margin: 0 0 35px 0;
+        }
+
+        .scores {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .scores span {
+            width: 46px;
+            height: 46px;
+            background-color: white;
+            color: black;
+            border-radius: 50%;
+            font-size: 30px;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .overs {
+            font-size: 45px;
+            font-weight: bold;
+            margin-top: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+
+        <div class="logo">
+            <span>🏏 SUPER</span>
+            <span>OVER</span>
+        </div>
+
+        <div class="teams">
+
+            <div class="team india">
+                <h1>IND</h1>
+
+                <div class="scores">
+                    <span>4</span>
+                    <span>3</span>
+                    <span>2</span>
+                    <span>6</span>
+                    <span>6</span>
+                    <span>6</span>
+                </div>
+
+                <div class="overs">27/0</div>
+            </div>
+
+            <div class="team pakistan">
+                <h1>PAK</h1>
+
+                <div class="scores">
+                    <span>2</span>
+                    <span>4</span>
+                    <span>0</span>
+                    <span>3</span>
+                    <span>1</span>
+                    <span>4</span>
+                </div>
+
+                <div class="overs">14/0</div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

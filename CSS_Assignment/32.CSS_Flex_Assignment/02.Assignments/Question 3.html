@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+        box-sizing: border-box;
+        }
+
+        .dashboard {
+        display: flex;
+        width: 1000px; /* Change to 700px to test */
+        height: 400px;
+        flex-direction: row;
+        gap: 15px;
+        align-items: stretch;
+        }
+
+        .sidebar {
+        flex: 0 0 200px;
+        background: #ddd;
+        }
+
+        .main-content {
+        flex: 1 1 0;
+        min-width: 0;
+        background: #e8f0ff;
+        }
+
+        .activity-panel {
+        flex: 0 0 250px;
+        background: #eee;
+        align-self: flex-start;
+        }
+
+        .dashboard > * {
+        padding: 15px;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <h3>Sidebar</h3>
+            <p>Dashboard</p>
+            <p>Analytics</p>
+            <p>Settings</p>
+        </aside>
+
+        <main class="main-content">
+            <h2>Dashboard Overview</h2>
+            <p>This is the main content area.</p>
+            <p>
+            Add more content here to test how the layout
+            responds when the available space changes.
+            </p>
+        </main>
+
+        <aside class="activity-panel">
+            <h3>Recent Activity</h3>
+            <p>New user registered</p>
+            <p>Order completed</p>
+        </aside>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: white;
+            color: black;
+        }
+
+        .logo {
+            position: absolute;
+            top: 15px;
+            right: 70px;
+            font-size: 55px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: orangered;
+        }
+
+        .container {
+            margin: 95px 4%;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 58px;
+            margin: 0;
+            text-shadow: 3px 4px 4px gray;
+        }
+
+        h2 {
+            color: #666;
+            font-size: 28px;
+            margin-top: 5px;
+            margin-bottom: 40px;
+        }
+
+        .scorecard {
+            width: 74%;
+            background-color: white;
+            box-shadow: 0px 4px 10px #ddd;
+            position: relative;
+            z-index: 2;
+        }
+
+        .innings {
+            background-color: #f34e38;
+            color: white;
+            padding: 14px 25px;
+            font-size: 21px;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 21px;
+        }
+
+        th {
+            font-weight: normal;
+            background-color: #fafafa;
+            text-align: left;
+        }
+
+        th, td {
+            padding: 13px 25px;
+            border-bottom: 1px solid #ccc;
+            white-space: nowrap;
+        }
+
+        th:not(:first-child),
+        td:not(:first-child) {
+            text-align: right;
+        }
+
+        th:nth-child(2),
+        td:nth-child(2) {
+            text-align: left;
+            color: #888;
+        }
+
+        .player {
+            color: #3185ff;
+        }
+
+        .extras td,
+        .total td {
+            color: black;
+        }
+
+        .did-not-bat {
+            color: #3185ff;
+        }
+
+        .background {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            width: 48%;
+            height: 65%;
+            background-image: url("world-cup.jpg");
+            background-size: cover;
+            background-position: center;
+            opacity: 0.18;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        Cric<span>Pr</span><span>◉</span>
+    </div>
+
+    <div class="background"></div>
+
+    <div class="container">
+
+        <h1>ICC WORLD CUP 2011</h1>
+        <h2>India Vs SriLanka ScoreCard</h2>
+
+        <div class="scorecard">
+
+            <div class="innings">
+                <span>India Innings</span>
+                <span>277- 4 (48.2)</span>
+            </div>
+
+            <table>
+
+                <tr>
+                    <th colspan="2">Batsman</th>
+                    <th>R</th>
+                    <th>B</th>
+                    <th>4s</th>
+                    <th>6s</th>
+                    <th>SR</th>
+                </tr>
+
+                <tr>
+                    <td class="player">Virender Sehwag</td>
+                    <td>lbw b L Malinga</td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0.00</td>
+                </tr>
+
+                <tr>
+                    <td class="player">Sachin Tendulkar</td>
+                    <td>c K Sangakkara b L Malinga</td>
+                    <td>18</td>
+                    <td>14</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>128.57</td>
+                </tr>
+
+                <tr>
+                    <td class="player">Gautam Gambhir</td>
+                    <td>b T Perera</td>
+                    <td>97</td>
+                    <td>122</td>
+                    <td>9</td>
+                    <td>0</td>
+                    <td>79.51</td>
+                </tr>
+
+                <tr>
+                    <td class="player">Virat Kohli</td>
+                    <td>c &amp; b T Dilshan</td>
+                    <td>35</td>
+                    <td>49</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>71.43</td>
+                </tr>
+
+                <tr>
+                    <td class="player">MS Dhoni (c &amp; wk)</td>
+                    <td>not out</td>
+                    <td>91</td>
+                    <td>79</td>
+                    <td>8</td>
+                    <td>2</td>
+                    <td>115.19</td>
+                </tr>
+
+                <tr>
+                    <td class="player">Yuvraj Singh</td>
+                    <td>not out</td>
+                    <td>21</td>
+                    <td>24</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>87.50</td>
+                </tr>
+
+                <tr class="extras">
+                    <td colspan="2">Extras</td>
+                    <td colspan="5" style="text-align: left;">
+                        15 (b 1, lb 6, w 8, nb 0, p 0)
+                    </td>
+                </tr>
+
+                <tr class="total">
+                    <td colspan="2">Total</td>
+                    <td colspan="5" style="text-align: left;">
+                        277 (4 wkts, 48.2 Ov)
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Did not bat</td>
+                    <td colspan="6" class="did-not-bat"
+                        style="text-align: left;">
+                        Suresh Raina, Harbhajan Singh, Zaheer Khan,
+                        Munaf Patel, S Sreesanth
+                    </td>
+                </tr>
+
+            </table>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

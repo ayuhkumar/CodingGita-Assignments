@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+        box-sizing: border-box;
+        }
+
+        .team {
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+        gap: 20px;
+        justify-content: space-between;
+        align-items: stretch;
+        }
+
+        .member {
+        flex: 1 1 280px;
+        min-width: 280px;
+        padding: 20px;
+        border: 1px solid #999;
+        background: #f5f5f5;
+        }
+
+        .member:nth-child(3) {
+        order: 1; /* Team Leader */
+        }
+
+        .member:nth-child(1) {
+        order: 2; /* Rahul */
+        }
+
+        .member:nth-child(2) {
+        order: 3; /* Priya */
+        }
+
+        .member:nth-child(4) {
+        order: 4; /* Neha */
+        }
+
+
+    </style>
+</head>
+<body>
+    <section class="team">
+        <article class="member">
+            <h3>Rahul</h3>
+            <p>Frontend Developer</p>
+        </article>
+
+        <article class="member">
+            <h3>Priya</h3>
+            <p>Backend Developer</p>
+        </article>
+
+        <article class="member">
+            <h3>Aman</h3>
+            <p>Team Leader</p>
+        </article>
+
+        <article class="member">
+            <h3>Neha</h3>
+            <p>UI/UX Designer</p>
+        </article>
+    </section>
+    
+</body>
+</html>
