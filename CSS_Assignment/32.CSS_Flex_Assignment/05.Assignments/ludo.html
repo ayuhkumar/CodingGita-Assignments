@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ludo</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .board {
+            width: 830px;
+            height: 830px;
+            margin: 2px auto;
+            display: grid;
+            grid-template-columns: repeat(15, 1fr);
+            grid-template-rows: repeat(15, 1fr);
+            border: 1px solid black;
+        }
+
+        .home {
+            grid-column: span 6;
+            grid-row: span 6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .red {
+            background-color: #f12f23;
+            grid-area: 1 / 1 / 7 / 7;
+        }
+
+        .green {
+            background-color: #347f20;
+            grid-area: 1 / 10 / 7 / 16;
+        }
+
+        .blue {
+            background-color: #101cf5;
+            grid-area: 10 / 1 / 16 / 7;
+        }
+
+        .yellow {
+            background-color: #ffff45;
+            grid-area: 10 / 10 / 16 / 16;
+        }
+
+        .inside {
+            width: 70%;
+            height: 70%;
+            background-color: white;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            justify-items: center;
+            align-items: center;
+        }
+
+        .token {
+            width: 45px;
+            height: 45px;
+            border: 6px solid;
+            border-radius: 50%;
+            box-sizing: border-box;
+        }
+
+        .red .token {
+            border-color: #f12f23;
+        }
+
+        .green .token {
+            border-color: #347f20;
+        }
+
+        .blue .token {
+            border-color: #101cf5;
+        }
+
+        .yellow .token {
+            border-color: #ffff45;
+        }
+
+        .cell {
+            border: 1px solid black;
+            box-sizing: border-box;
+            background-color: white;
+        }
+
+        .red-path {
+            background-color: #f12f23;
+        }
+
+        .green-path {
+            background-color: #347f20;
+        }
+
+        .blue-path {
+            background-color: #101cf5;
+        }
+
+        .yellow-path {
+            background-color: #ffff45;
+        }
+
+        .star {
+            font-size: 35px;
+            text-align: center;
+            line-height: 53px;
+        }
+
+        .center {
+            grid-area: 7 / 7 / 10 / 10;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+
+        .triangle {
+            width: 0;
+            height: 0;
+        }
+
+        .top-green {
+            grid-area: 1 / 1 / 2 / 3;
+            background: #347f20;
+            clip-path: polygon(0 0, 100% 0, 50% 100%);
+        }
+
+        .left-red {
+            grid-area: 1 / 1 / 3 / 2;
+            background: #f12f23;
+            clip-path: polygon(0 0, 100% 50%, 0 100%);
+        }
+
+        .right-yellow {
+            grid-area: 1 / 2 / 3 / 3;
+            background: #ffff45;
+            clip-path: polygon(100% 0, 100% 100%, 0 50%);
+        }
+
+        .bottom-blue {
+            grid-area: 2 / 1 / 3 / 3;
+            background: #101cf5;
+            clip-path: polygon(0 100%, 100% 100%, 50% 0);
+        }
+
+        .board {
+            position: relative;
+        }
+
+        .path {
+            position: absolute;
+            display: grid;
+            background-color: white;
+        }
+
+        .vertical {
+            width: 20%;
+            height: 40%;
+            left: 40%;
+            top: 0;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+        }
+
+        .vertical-bottom {
+            top: 60%;
+        }
+
+        .horizontal {
+            width: 40%;
+            height: 20%;
+            left: 0;
+            top: 40%;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+        }
+
+        .horizontal-right {
+            left: 60%;
+        }
+    </style>
+</head>
+<body>
+    <div class="board">
+
+        <div class="home red">
+            <div class="inside">
+                <div class="token"></div>
+                <div class="token"></div>
+                <div class="token"></div>
+                <div class="token"></div>
+            </div>
+        </div>
+
+        <div class="home green">
+            <div class="inside">
+                <div class="token"></div>
+                <div class="token"></div>
+                <div class="token"></div>
+                <div class="token"></div>
+            </div>
+        </div>
+
+        <div class="home blue">
+            <div class="inside">
+                <div class="token"></div>
+                <div class="token"></div>
+                <div class="token"></div>
+                <div class="token"></div>
+            </div>
+        </div>
+
+        <div class="home yellow">
+            <div class="inside">
+                <div class="token"></div>
+                <div class="token"></div>
+                <div class="token"></div>
+                <div class="token"></div>
+            </div>
+        </div>
+
+        <!-- Top middle path -->
+        <div class="path vertical">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+
+            <div class="cell"></div>
+            <div class="cell green-path"></div>
+            <div class="cell green-path star">★</div>
+            <div class="cell green-path"></div>
+            <div class="cell green-path"></div>
+            <div class="cell green-path"></div>
+
+            <div class="cell green-path star">★</div>
+            <div class="cell green-path"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell green-path"></div>
+            <div class="cell"></div>
+        </div>
+
+        <!-- Bottom middle path -->
+        <div class="path vertical vertical-bottom">
+            <div class="cell"></div>
+            <div class="cell blue-path"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell blue-path"></div>
+            <div class="cell"></div>
+
+            <div class="cell"></div>
+            <div class="cell blue-path"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell blue-path star">★</div>
+            <div class="cell"></div>
+
+            <div class="cell blue-path star">★</div>
+            <div class="cell blue-path"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+
+        <!-- Left middle path -->
+        <div class="path horizontal">
+            <div class="cell"></div>
+            <div class="cell red-path star">★</div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+
+            <div class="cell"></div>
+            <div class="cell red-path"></div>
+            <div class="cell red-path"></div>
+            <div class="cell red-path"></div>
+            <div class="cell red-path"></div>
+            <div class="cell red-path"></div>
+
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell red-path star">★</div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+
+        <!-- Right middle path -->
+        <div class="path horizontal horizontal-right">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell yellow-path star">★</div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+
+            <div class="cell yellow-path"></div>
+            <div class="cell yellow-path"></div>
+            <div class="cell yellow-path"></div>
+            <div class="cell yellow-path"></div>
+            <div class="cell yellow-path"></div>
+            <div class="cell"></div>
+
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell yellow-path star">★</div>
+            <div class="cell"></div>
+        </div>
+
+        <!-- Center of the board -->
+        <div class="center">
+            <div class="triangle top-green"></div>
+            <div class="triangle left-red"></div>
+            <div class="triangle right-yellow"></div>
+            <div class="triangle bottom-blue"></div>
+        </div>
+
+    </div>
+
+    
+</body>
+</html>
