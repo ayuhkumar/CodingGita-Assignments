@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kidz World</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: #111;
+        }
+
+        .main {
+            width: 100%;
+        }
+
+        .nava {
+            width: 90%;
+            height: 38px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .navleft img {
+            width: 120px;
+        }
+
+        .right {
+            display: flex;
+            align-items: center;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .right img {
+            width: 27px;
+            margin-right: 3px;
+        }
+
+        .hero {
+            width: 100%;
+            height: 355px;
+            background-image: url("assets/kw-background.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .herotext {
+            padding-top: 55px;
+            padding-left: 5%;
+            color: white;
+            font-family: Georgia, serif;
+            font-size: 56px;
+            line-height: 1.25;
+        }
+
+        .herotext p {
+            margin: 10px 0;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .products {
+            width: 90%;
+            margin: 135px auto 0 auto;
+        }
+
+        .heading {
+            font-family: Georgia, serif;
+            font-size: 19px;
+            font-weight: bold;
+            margin-bottom: 7px;
+        }
+
+        .cardrow {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .cardwa {
+            width: 15%;
+        }
+
+        .cardimg img {
+            width: 100%;
+            height: 211px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .cardtext {
+            margin-top: 4px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .cardtext .author {
+            margin-top: 8px;
+            color: gray;
+            font-size: 12px;
+            font-weight: normal;
+        }
+
+        .cardbuy {
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .cart {
+            background-color: #5c91ff;
+            color: white;
+            border-radius: 4px;
+            padding: 4px 5px;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+        }
+
+        .cart img {
+            width: 18px;
+            height: 17px;
+        }
+
+        .games, .handmade {
+            margin-top: 132px;
+        }
+
+        .four-cards .cardwa {
+            width: 20%;
+        }
+
+        .four-cards .cardimg img {
+            height: 211px;
+        }
+
+        .handmade .cardimg img {
+            border: 1px solid #e2e2e2;
+            box-sizing: border-box;
+        }
+
+        .bottom-space {
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <!-- navigation -->
+        <div class="nava">
+            <div class="navleft">
+                <img src="assets/kw-logo.png" alt="Kidz World">
+            </div>
+            <div class="right">
+                <img src="assets/cart-icon.png" alt="">
+                Cart items (0)
+            </div>
+        </div>
+
+        <!-- hero section -->
+        <div class="hero">
+            <div class="herotext">
+                <div>Shop.</div>
+                <div>Have Fun.</div>
+                <div>Repeat.</div>
+                <p>#NewAndNow</p>
+            </div>
+        </div>
+
+        <!-- books -->
+        <div class="products">
+            <div class="heading">Discover New Books</div>
+            <div class="cardrow">
+                <div class="cardwa">
+                    <div class="cardimg"><img src="assets/book1.png" alt="This was our pact"></div>
+                    <div class="cardtext">This was our pact<div class="author">Ryan Andrews</div></div>
+                    <div class="cardbuy"><div>$7.49</div><div class="cart">Add <img src="assets/cart-icon-white.png" alt=""></div></div>
+                </div>
+                <div class="cardwa">
+                    <div class="cardimg"><img src="assets/book2.png" alt="The Famous Five"></div>
+                    <div class="cardtext">The famous five<div class="author">Guid Blyton</div></div>
+                    <div class="cardbuy"><div>$4.59</div><div class="cart">Add <img src="assets/cart-icon-white.png" alt=""></div></div>
+                </div>
+                <div class="cardwa">
+                    <div class="cardimg"><img src="assets/book3.png" alt="Matilda"></div>
+                    <div class="cardtext">Matilda<div class="author">Roald Dahl</div></div>
+                    <div class="cardbuy"><div>$6.80</div><div class="cart">Add <img src="assets/cart-icon-white.png" alt=""></div></div>
+                </div>
+                <div class="cardwa">
+                    <div class="cardimg"><img src="assets/book4.png" alt="Harry Potter"></div>
+                    <div class="cardtext">Harry Potter<div class="author">JK Rowling</div></div>
+                    <div class="cardbuy"><div>$10</div><div class="cart">Add <img src="assets/cart-icon-white.png" alt=""></div></div>
+                </div>
+                <div class="cardwa">
+                    <div class="cardimg"><img src="assets/book5.png" alt="For Young Readers"></div>
+                    <div class="cardtext">For Young Readers<div class="author">Ruskin Bond</div></div>
+                    <div class="cardbuy"><div>$7.29</div><div class="cart">Add <img src="assets/cart-icon-white.png" alt=""></div></div>
+                </div>
+                <div class="cardwa">
+                    <div class="cardimg"><img src="assets/book6.png" alt="Wimpy Kid DIY"></div>
+                    <div class="cardtext">Wimpy Kid - DIY<div class="author">Jeff Kinney</div></div>
+                    <div class="cardbuy"><div>$4.99</div><div class="cart">Add <img src="assets/cart-icon-white.png" alt=""></div></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- games -->
+        <div class="products games">
+            <div class="heading">Discover New Games</div>
+            <div class="cardrow four-cards">
+                <div class="cardwa">
+                    <div class="cardimg"><img src="assets/dart-board.png" alt="Dart board"></div>
+                    <div class="cardtext">Dart Board<div class="author">Wooden board, 16 inches</div></div>
+                    <div class="cardbuy"><div>$17.49</div><div class="cart">Add <img src="assets/cart-icon-white.png" alt=""></div></div>
+                </div>
+                <div class="cardwa">
+                    <div class="cardimg"><img src="assets/connect-four.png" alt="Connect 4"></div>
+                    <div class="cardtext">Connect 4<div class="author">Board game, multiplayer</div></div>
+                    <div class="cardbuy"><div>$19.99</div><div class="cart">Add <img src="assets/cart-icon-white.png" alt=""></div></div>
+                </div>
+                <div class="cardwa">
+                    <div class="cardimg"><img src="assets/jenga.png" alt="Jenga"></div>
+                    <div class="cardtext">Jenga<div class="author">Wooden blocks, 54 pieces</div></div>
+                    <div class="cardbuy"><div>$20.99</div><div class="cart">Add <img src="assets/cart-icon-white.png" alt=""></div></div>
+                </div>
+                <div class="cardwa">
+                    <div class="cardimg"><img src="assets/monopoly.png" alt="Monopoly"></div>
+                    <div class="cardtext">Monopoly<div class="author">1.61 x 15.75 x 10.51 inches</div></div>
+                    <div class="cardbuy"><div>$19.49</div><div class="cart">Add <img src="assets/cart-icon-white.png" alt=""></div></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- handmade items -->
+        <div class="products handmade">
+            <div class="heading">Handmade with love</div>
+            <div class="cardrow four-cards">
+                <div class="cardwa">
+                    <div class="cardimg"><img src="assets/bookmarks.png" alt="Bookmarks"></div>
+                    <div class="cardtext">Bookmarks<div class="author">Handmade with love</div></div>
+                    <div class="cardbuy"><div>$12.49</div><div class="cart">Add <img src="assets/cart-icon-white.png" alt=""></div></div>
+                </div>
+                <div class="cardwa">
+                    <div class="cardimg"><img src="assets/birthday-card.png" alt="Birthday card"></div>
+                    <div class="cardtext">Birthday card<div class="author">Handmade with love</div></div>
+                    <div class="cardbuy"><div>$19.99</div><div class="cart">Add <img src="assets/cart-icon-white.png" alt=""></div></div>
+                </div>
+                <div class="cardwa">
+                    <div class="cardimg"><img src="assets/stuffed-toy.png" alt="Stuffed toys"></div>
+                    <div class="cardtext">Stuffed toys<div class="author">Handmade with love</div></div>
+                    <div class="cardbuy"><div>$15.99</div><div class="cart">Add <img src="assets/cart-icon-white.png" alt=""></div></div>
+                </div>
+                <div class="cardwa">
+                    <div class="cardimg"><img src="assets/dream-catcher.png" alt="Dream catcher drawing"></div>
+                    <div class="cardtext">Dream catcher drawing<div class="author">Handmade with love</div></div>
+                    <div class="cardbuy"><div>$18.49</div><div class="cart">Add <img src="assets/cart-icon-white.png" alt=""></div></div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-space"></div>
+    </div>
+</body>
+</html>
