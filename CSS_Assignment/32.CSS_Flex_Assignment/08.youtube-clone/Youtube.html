@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            font-family: sans-serif;
+            
+        }
+        .sidenav{
+            position: fixed;
+            width: 15.7%;
+            height: 100vh;
+            left: 0;
+            top: 0;
+            background-color: #212121;
+            align-items: stretch;
+            justify-content: flex-start;
+            gap: 8px;
+            padding: 0 8px;
+            box-sizing: border-box;
+            overflow-y: auto;
+        }
+        .main{
+            height: 100%;
+            margin-left:15% ;
+            /* border: green solid 2px; */
+            width: 85%;
+            margin-left: 15.15%;
+            
+        }
+
+        .top{
+            width: 100%;
+            height: 75px;
+            /* border: blue solid 1px; */
+            
+        }
+        .up{
+            width: 100%;
+            height: 62px;
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin-left: 0;
+            align-items: center;
+            padding: 0 18px;
+            box-sizing: border-box;
+        }
+        .pro{
+            display: flex;
+            gap: 22px;
+            align-items: center;
+            justify-content: flex-end;
+            width: 30%;
+            height: 88%;
+            flex-shrink: 0;
+        }
+        .pro img{
+            width: 25px;
+            height: 25px;
+            object-fit: contain;
+        }
+        .down{
+            width: 100%;
+            height: 63px;
+            display: flex;
+            gap: 12px;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 0 16px;
+            box-sizing: border-box;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        .search{
+            width: 58%;
+            max-width: 690px;
+            height: 46px;
+            border: 1px solid #303030;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            overflow: hidden;
+            background-color: #121212;
+            flex-shrink: 1;
+        }
+        .sear{
+            box-sizing: border-box;
+            display: inline-block;
+            width: 85%;
+            height: 100%;
+            /* border: 1px gold solid; */
+            padding-top: 7px;
+            padding-left: 5px;
+            
+        }
+        .search img{
+            width: 42px;
+            height: 100%;
+            padding: 9px;
+            box-sizing: border-box;
+            object-fit: contain;
+            background-color: #303030;
+        }
+       
+        
+        .down span{
+            /* border: yellow 1px solid; */
+            padding: 6px 6px;
+            
+           
+            background-color: #383838;
+            border-radius: 17.5px;
+            
+        }
+        .sidenav{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            
+        }
+        
+        .logo{
+            width: 100%;
+            height: 62px;
+            min-height: 62px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+        .logo .img1{
+            width: 24px;
+            height: 24px;
+            object-fit: contain;
+        }
+        .logo .img2{
+            width: 105px;
+            height: auto;
+            object-fit: contain;
+        }
+        .icon{
+            /* border: red solid 1px; */
+            width: 90%;
+            height: 35px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 10px;
+            
+            
+        }
+        .icon img{
+            width: 25px;
+            height: 25px;
+            
+        }
+        .vidstack{
+            width: 100%;
+            margin-left: 2px;
+            margin-top: 40px;
+            /* border: 1px green solid; */
+            display: flex;
+            gap: 10px;
+            
+        }
+        .vid{
+            width: calc(25% - 14px);
+            min-width: 0;
+            flex: 1 1 0;
+        }
+        .vid .imga{
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            overflow: hidden;
+        }
+        .imga img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .para{
+            min-width: 0;
+        }
+        .para pre{
+            white-space: pre-wrap;
+            overflow-wrap: anywhere;
+            font-family: Arial, sans-serif;
+            margin: 10px 0 0;
+            line-height: 1.35;
+        }
+        .para pre img{
+            vertical-align: middle;
+            border-radius: 50%;
+        }
+        @media (max-width: 1200px){
+            .vidstack{ flex-wrap: wrap; }
+            .vid{ flex: 1 1 calc(33.333% - 18px); max-width: calc(33.333% - 12px); }
+            .main{ margin-left: 18%; width: 82%; }
+            .down{ gap: 8px; }
+        }
+        @media (max-width: 850px){
+            .sidenav{ width: 70px; padding: 0 6px; align-items: center; }
+            .sidenav .icon{ justify-content: center; padding: 0; font-size: 0; }
+            .sidenav .icon img{ width: 24px; height: 24px; }
+            .sidenav .logo .img2, .sidenav > div[style], .sidenav hr{ display: none; }
+            .logo .img1{ margin: auto; }
+            .main{ margin-left: 70px; width: calc(100% - 70px); padding: 0 12px; }
+            .up{ padding: 0 8px; gap: 8px; }
+            .search{ width: 72%; }
+            .pro{ gap: 10px; width: auto; }
+            .pro img{ width: 21px; height: 21px; }
+            .vidstack{ flex-wrap: wrap; gap: 20px 12px; }
+            .vid{ flex: 1 1 calc(50% - 12px); max-width: calc(50% - 6px); }
+        }
+        @media (max-width: 520px){
+            .vidstack{ flex-direction: column; }
+            .vid{ flex: 1 1 100%; max-width: 100%; width: 100%; }
+            .pro img:nth-child(1), .pro img:nth-child(2), .pro img:nth-child(3){ display: none; }
+            .down{ padding: 0 6px; }
+        }
+
+        /* Small CSS adjustments to match the reference screenshot (Flexbox only) */
+        body { background: #0f0f0f; font-family: Arial, sans-serif; overflow-x: hidden; }
+        .sidenav {
+            width: 17.2%; height: 100vh; padding: 0 8px; box-sizing: border-box;
+            background: #212121; align-items: stretch; justify-content: flex-start;
+            gap: 0; overflow-y: auto;
+        }
+        .logo { height: 64px; min-height: 64px; justify-content: flex-start; padding-left: 18px; box-sizing: border-box; gap: 15px; margin-bottom: 20px; }
+        .logo .img1 { width: 24px; height: 24px; }
+        .logo .img2 { width: 118px; height: auto; }
+        .sidenav .icon { width: 100%; height: 42px; min-height: 42px; padding: 0 18px; box-sizing: border-box; gap: 22px; font-size: 14px; border-radius: 0; }
+        .sidenav .icon:first-of-type { background: #383838; font-weight: 600; }
+        .sidenav .icon img { width: 25px; height: 25px; object-fit: contain; flex-shrink: 0; }
+        .sidenav hr { width: 100%; border: 0; border-top: 1px solid #3b3b3b; margin: 12px 0 18px; }
+        .sidenav > div[style] { padding: 6px 18px 8px; font-size: 14px !important; color: #aaa !important; font-weight: 600 !important; text-transform: uppercase; }
+        .main { margin-left: 18%; width: 82%; min-height: 100vh; padding: 0 22px 25px 8px; box-sizing: border-box; }
+        .top { height: 130px; width: 100%; position: sticky; top: 0; z-index: 5; background: #0f0f0f; }
+        .top hr { border: 0; border-top: 1px solid #303030; margin: 0; }
+        .up { height: 63px; padding: 0 18px 0 12%; justify-content: space-between; gap: 20px; }
+        .search { width: 58%; max-width: 690px; height: 46px; border: 1px solid #303030; border-radius: 4px; background: #121212; }
+        .sear { width: 100%; padding: 12px 10px; color: #aaa; font-size: 16px; }
+        .search img { width: 42px; height: 100%; padding: 9px; object-fit: contain; background: #303030 !important; }
+        .pro { width: 30%; gap: 22px; justify-content: flex-end; }
+        .pro img { width: 25px; height: 25px; object-fit: contain; }
+        .down { height: 64px; padding: 0 16px; display: flex; justify-content: flex-start; gap: 12px; overflow: hidden; white-space: nowrap; }
+        .down span { padding: 10px 16px; border: 1px solid #444; background: #303030; border-radius: 18px; font-size: 14px; flex-shrink: 0; }
+        .vidstack { display: flex; flex-wrap: nowrap; width: 100%; gap: 18px; margin: 24px 0 42px; }
+        .vid { flex: 1 1 0; width: 0; min-width: 0; }
+        .vid .imga { width: 100%; aspect-ratio: 16 / 9; overflow: hidden; }
+        .imga img { display: block; width: 100%; height: 100%; object-fit: cover; }
+        .line { display: flex; align-items: flex-start; }
+        .para { min-width: 0; width: 100%; }
+        .para pre { white-space: pre-wrap; overflow-wrap: anywhere; font-family: Arial, sans-serif; margin: 10px 0 0; line-height: 1.35; }
+        .para pre img { vertical-align: middle; border-radius: 50%; }
+        @media (max-width: 1200px) {
+            .main { margin-left: 18%; width: 82%; padding-right: 14px; }
+            .vidstack { flex-wrap: wrap; }
+            .vid { flex: 1 1 calc(33.333% - 18px); width: auto; }
+            .up { padding-left: 4%; }
+            .down { gap: 8px; }
+        }
+        @media (max-width: 850px) {
+            .sidenav { width: 70px; padding: 0 6px; align-items: center; }
+            .sidenav .icon { justify-content: center; padding: 0; font-size: 0; }
+            .sidenav .icon img { width: 24px; height: 24px; }
+            .sidenav .logo .img2, .sidenav > div[style], .sidenav hr { display: none; }
+            .logo { justify-content: center; padding: 0; }
+            .main { margin-left: 70px; width: calc(100% - 70px); padding: 0 12px; }
+            .up { padding: 0 8px; gap: 8px; }
+            .search { width: 72%; }
+            .pro { width: auto; gap: 10px; }
+            .pro img { width: 21px; height: 21px; }
+            .vidstack { gap: 20px 12px; }
+            .vid { flex: 1 1 calc(50% - 12px); }
+        }
+        @media (max-width: 520px) {
+            .vidstack { flex-direction: column; }
+            .vid { flex: 1 1 100%; width: 100%; }
+            .pro img:nth-child(1), .pro img:nth-child(2), .pro img:nth-child(3) { display: none; }
+            .down { padding: 0 6px; }
+        }
+
+    </style>
+</head>
+<body>
+    <!-- sideBar -->
+     
+     <aside class="sidenav">
+        <!-- logo -->
+        <div class="logo">
+            <img src="assets/hambarger.png" alt="" class="img1">
+            <img src="assets/Youtube logo.png" alt="" class="img2">
+        </div>
+        <!-- 1st icons -->
+        <div class="icon">
+            <img src="assets/home.png" alt="">Home
+        </div>
+        <div class="icon">
+            <img src="assets/explore.png" alt="">Explores
+        </div>
+        <div class="icon">
+            <img src="assets/shorts.png" alt="">Shorts
+        </div>
+        <div class="icon">
+            <img src="assets/subscription.png" alt="">Subscriptions
+        </div>
+        <hr>
+        <!-- 2nd icon -->
+        
+        
+        <div class="icon">
+            <img src="assets/library.png" alt="">Library
+        </div>
+        <div class="icon">
+            <img src="assets/history.png" alt="">History
+        </div>
+        <div class="icon">
+            <img src="assets/your_video.png" alt="">Your Videos
+        </div>
+        <div class="icon">
+            <img src="assets/watch_later.png" alt="">Watch Later
+        </div>
+        <div class="icon">
+            <img src="assets/liked.png" alt="">Liked Videos
+        </div>
+        <div class="icon">
+            <img src="assets/down_arrow.png" alt="">Show more
+        </div>
+        <hr>
+        <!-- 3rd icon -->
+         <div style="color: white; font-size: 22px; font-weight: 300;" >
+            Subscriptions
+        </div>
+         <div class="icon">
+            <img src="assets/Ellipse 1.png" alt="">Nadir On The Go
+        </div>
+        <div class="icon">
+            <img src="assets/Ellipse 4 (1).png" alt="">Coke Studio Bangla
+        </div>
+        <div class="icon">
+            <img src="assets/Ellipse 4 (2).png" alt="">MKBHD
+        </div>
+        <div class="icon">
+            <img src="assets/Ellipse 4 (3).png" alt="">Figma
+        </div>
+        <div class="icon">
+            <img src="assets/Ellipse 4 (4).png" alt="">ATC Android ToTo C...
+        </div>
+        <div class="icon">
+            <img src="assets/Ellipse 4 (5).png" alt="">Alux.com
+        </div>
+     </aside>
+
+
+
+    <!-- main container -->
+    <div class="main">
+        <!-- top navigation -->
+        <nav class="top">
+            <div class="up">
+                <div class="search">
+                    <span class="sear">Search </span>
+                    <img src="assets/search.png" alt="" style="background-color: grey; height: 100%;">
+                    <img src="assets/mic.png" alt="">
+                </div>
+                <div class="pro">
+                    <img src="assets/create.png" alt="">
+                    <img src="assets/more.png" alt="">
+                    <img src="assets/bell.png" alt="">
+                    <img src="assets/Sarthak-B3DUKmW-.jpg" alt="" style="border-radius: 50%;">
+                </div>
+            </div>
+            <hr>
+            <div class="down">
+                <span style="color: black; background-color: white;">All</span>
+                <span>Cook Studio</span>
+                <span>UX</span>
+                <span>Case Study</span>
+                <span>Music</span>
+                <span>Bangla Lofi</span>
+                <span>Tour</span>
+                <span>Saintmartin</span>
+                <span>Tech</span>
+                <span>iphone 13</span>
+                <span>User Interface Design</span>
+                <span style="background-color: black;">></span>
+            </div>
+            <hr>
+        </nav>
+
+        <!-- Videos -->
+         <div class="vidstack">
+
+            <div class="vid">
+                <div class="imga">
+                    <img src="assets/Thumbnail-8.png" alt="">
+                </div>
+                <div class="line">
+                    
+                    <div class="para">
+<pre style="font-size: 15px;">
+<img src="assets/Ellipse 1 (1).png" alt="" style="width: 25px; height: 25px;">Bulbuli | Coke Studio Bangla |
+    Season One | Ritu Raj X Nandita</pre><pre style="font-size: 12px; color: grey;">
+        Coke Studio Bangla <img src="assets/verified.png" alt="" style="height: 15px; width: 15px;">
+        1.5Mviews . 2 days ago</pre>
+                    </div>
+                </div>
+            </div>
+            <div class="vid">
+                <div class="imga">
+                    <img src="assets/Thumbnail-9.png" alt="">
+                </div>
+                <div class="line">
+                    
+                    <div class="para">
+<pre style="font-size: 15px;">
+<img src="assets/Ellipse 1 (1).png" alt="" style="width: 25px; height: 25px;">Bulbuli | Coke Studio Bangla |
+    Season One | Ritu Raj X Nandita</pre><pre style="font-size: 12px; color: grey;">
+        Coke Studio Bangla <img src="assets/verified.png" alt="" style="height: 15px; width: 15px;">
+        1.5Mviews . 2 days ago</pre>
+                    </div>
+                </div>
+            </div>
+            <div class="vid">
+                <div class="imga">
+                    <img src="assets/Thumbnail-1.png" alt="">
+                </div>
+                <div class="line">
+                    
+                    <div class="para">
+<pre style="font-size: 15px;">
+<img src="assets/Ellipse 1 (1).png" alt="" style="width: 25px; height: 25px;">Bulbuli | Coke Studio Bangla |
+    Season One | Ritu Raj X Nandita</pre><pre style="font-size: 12px; color: grey;">
+        Coke Studio Bangla <img src="assets/verified.png" alt="" style="height: 15px; width: 15px;">
+        1.5Mviews . 2 days ago</pre>
+                    </div>
+                </div>
+            </div>
+            <div class="vid">
+                <div class="imga">
+                    <img src="assets/Thumbnail-1.png" alt="">
+                </div>
+                <div class="line">
+                    
+                    <div class="para">
+<pre style="font-size: 15px;">
+<img src="assets/Ellipse 1 (1).png" alt="" style="width: 25px; height: 25px;">Bulbuli | Coke Studio Bangla |
+    Season One | Ritu Raj X Nandita</pre><pre style="font-size: 12px; color: grey;">
+        Coke Studio Bangla <img src="assets/verified.png" alt="" style="height: 15px; width: 15px;">
+        1.5Mviews . 2 days ago</pre>
+                    </div>
+                </div>
+            </div>
+         </div>
+
+         <!-- 2nd row -->
+
+         <div class="vidstack">
+
+            <div class="vid">
+                <div class="imga">
+                    <img src="assets/Thumbnail-1.png" alt="">
+                </div>
+                <div class="line">
+                    
+                    <div class="para">
+<pre style="font-size: 15px;">
+<img src="assets/Ellipse 1 (1).png" alt="" style="width: 25px; height: 25px;">Bulbuli | Coke Studio Bangla |
+    Season One | Ritu Raj X Nandita</pre><pre style="font-size: 12px; color: grey;">
+        Coke Studio Bangla <img src="assets/verified.png" alt="" style="height: 15px; width: 15px;">
+        1.5Mviews . 2 days ago</pre>
+                    </div>
+                </div>
+            </div>
+            <div class="vid">
+                <div class="imga">
+                    <img src="assets/Thumbnail-1.png" alt="">
+                </div>
+                <div class="line">
+                    
+                    <div class="para">
+<pre style="font-size: 15px;">
+<img src="assets/Ellipse 1 (1).png" alt="" style="width: 25px; height: 25px;">Bulbuli | Coke Studio Bangla |
+    Season One | Ritu Raj X Nandita</pre><pre style="font-size: 12px; color: grey;">
+        Coke Studio Bangla <img src="assets/verified.png" alt="" style="height: 15px; width: 15px;">
+        1.5Mviews . 2 days ago</pre>
+                    </div>
+                </div>
+            </div>
+            <div class="vid">
+                <div class="imga">
+                    <img src="assets/Thumbnail-1.png" alt="">
+                </div>
+                <div class="line">
+                    
+                    <div class="para">
+<pre style="font-size: 15px;">
+<img src="assets/Ellipse 1 (1).png" alt="" style="width: 25px; height: 25px;">Bulbuli | Coke Studio Bangla |
+    Season One | Ritu Raj X Nandita</pre><pre style="font-size: 12px; color: grey;">
+        Coke Studio Bangla <img src="assets/verified.png" alt="" style="height: 15px; width: 15px;">
+        1.5Mviews . 2 days ago</pre>
+                    </div>
+                </div>
+            </div>
+            <div class="vid">
+                <div class="imga">
+                    <img src="assets/Thumbnail-1.png" alt="">
+                </div>
+                <div class="line">
+                    
+                    <div class="para">
+<pre style="font-size: 15px;">
+<img src="assets/Ellipse 1 (1).png" alt="" style="width: 25px; height: 25px;">Bulbuli | Coke Studio Bangla |
+    Season One | Ritu Raj X Nandita</pre><pre style="font-size: 12px; color: grey;">
+        Coke Studio Bangla <img src="assets/verified.png" alt="" style="height: 15px; width: 15px;">
+        1.5Mviews . 2 days ago</pre>
+                    </div>
+                </div>
+            </div>
+         </div>
+
+
+         <!-- 3rd row -->
+
+         <div class="vidstack">
+
+            <div class="vid">
+                <div class="imga">
+                    <img src="assets/Thumbnail-1.png" alt="">
+                </div>
+                <div class="line">
+                    
+                    <div class="para">
+<pre style="font-size: 15px;">
+<img src="assets/Ellipse 1 (1).png" alt="" style="width: 25px; height: 25px;">Bulbuli | Coke Studio Bangla |
+    Season One | Ritu Raj X Nandita</pre><pre style="font-size: 12px; color: grey;">
+        Coke Studio Bangla <img src="assets/verified.png" alt="" style="height: 15px; width: 15px;">
+        1.5Mviews . 2 days ago</pre>
+                    </div>
+                </div>
+            </div>
+            <div class="vid">
+                <div class="imga">
+                    <img src="assets/Thumbnail-1.png" alt="">
+                </div>
+                <div class="line">
+                    
+                    <div class="para">
+<pre style="font-size: 15px;">
+<img src="assets/Ellipse 1 (1).png" alt="" style="width: 25px; height: 25px;">Bulbuli | Coke Studio Bangla |
+    Season One | Ritu Raj X Nandita</pre><pre style="font-size: 12px; color: grey;">
+        Coke Studio Bangla <img src="assets/verified.png" alt="" style="height: 15px; width: 15px;">
+        1.5Mviews . 2 days ago</pre>
+                    </div>
+                </div>
+            </div>
+            <div class="vid">
+                <div class="imga">
+                    <img src="assets/Thumbnail-1.png" alt="">
+                </div>
+                <div class="line">
+                    
+                    <div class="para">
+<pre style="font-size: 15px;">
+<img src="assets/Ellipse 1 (1).png" alt="" style="width: 25px; height: 25px;">Bulbuli | Coke Studio Bangla |
+    Season One | Ritu Raj X Nandita</pre><pre style="font-size: 12px; color: grey;">
+        Coke Studio Bangla <img src="assets/verified.png" alt="" style="height: 15px; width: 15px;">
+        1.5Mviews . 2 days ago</pre>
+                    </div>
+                </div>
+            </div>
+            <div class="vid">
+                <div class="imga">
+                    <img src="assets/Thumbnail-1.png" alt="">
+                </div>
+                <div class="line">
+                    
+                    <div class="para">
+<pre style="font-size: 15px;">
+<img src="assets/Ellipse 1 (1).png" alt="" style="width: 25px; height: 25px;">Bulbuli | Coke Studio Bangla |
+    Season One | Ritu Raj X Nandita</pre><pre style="font-size: 12px; color: grey;">
+        Coke Studio Bangla <img src="assets/verified.png" alt="" style="height: 15px; width: 15px;">
+        1.5Mviews . 2 days ago</pre>
+                    </div>
+                </div>
+            </div>
+         </div>
+    
+    
+    </div>
+
+    
+    
+</body>
+</html>
