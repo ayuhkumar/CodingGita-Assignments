@@ -204,92 +204,236 @@
             border-radius: 50%;
         }
         @media (max-width: 1200px){
-            .vidstack{ flex-wrap: wrap; }
-            .vid{ flex: 1 1 calc(33.333% - 18px); max-width: calc(33.333% - 12px); }
-            .main{ margin-left: 18%; width: 82%; }
-            .down{ gap: 8px; }
+            .vidstack{ flex-wrap: wrap; 
+            }
+            .vid{ flex: 1 1 calc(33.333% - 18px); 
+                max-width: calc(33.333% - 12px); 
+            }
+            .main{ margin-left: 18%; 
+                width: 82%; 
+            }
+            .down{ gap: 8px; 
+            }
         }
         @media (max-width: 850px){
-            .sidenav{ width: 70px; padding: 0 6px; align-items: center; }
-            .sidenav .icon{ justify-content: center; padding: 0; font-size: 0; }
-            .sidenav .icon img{ width: 24px; height: 24px; }
-            .sidenav .logo .img2, .sidenav > div[style], .sidenav hr{ display: none; }
-            .logo .img1{ margin: auto; }
-            .main{ margin-left: 70px; width: calc(100% - 70px); padding: 0 12px; }
-            .up{ padding: 0 8px; gap: 8px; }
+            .sidenav{ width: 70px; 
+                padding: 0 6px; 
+                align-items: center; 
+            }
+            .sidenav .icon{ justify-content: center; 
+                padding: 0; 
+                font-size: 0; 
+            }
+            .sidenav .icon img{ width: 24px; 
+                height: 24px; 
+            }
+            .sidenav .logo .img2, .sidenav > div[style], .sidenav hr{ display: none; 
+            }
+            .logo .img1{ margin: auto; 
+            }
+            .main{ margin-left: 70px; 
+                width: calc(100% - 70px); 
+                padding: 0 12px; 
+            }
+            .up{ padding: 0 8px; 
+                gap: 8px; }
             .search{ width: 72%; }
-            .pro{ gap: 10px; width: auto; }
-            .pro img{ width: 21px; height: 21px; }
-            .vidstack{ flex-wrap: wrap; gap: 20px 12px; }
-            .vid{ flex: 1 1 calc(50% - 12px); max-width: calc(50% - 6px); }
+            .pro{ gap: 10px; 
+                width: auto; 
+            }
+            .pro img{ width: 21px; 
+                height: 21px; 
+            }
+            .vidstack{ flex-wrap: wrap; 
+                gap: 20px 12px; 
+            }
+            .vid{ flex: 1 1 calc(50% - 12px); 
+                max-width: calc(50% - 6px); 
+            }
         }
         @media (max-width: 520px){
-            .vidstack{ flex-direction: column; }
-            .vid{ flex: 1 1 100%; max-width: 100%; width: 100%; }
-            .pro img:nth-child(1), .pro img:nth-child(2), .pro img:nth-child(3){ display: none; }
-            .down{ padding: 0 6px; }
+            .vidstack{ flex-direction: column; 
+            }
+            .vid{ flex: 1 1 100%; 
+                max-width: 100%; 
+                width: 100%; 
+            }
+            .pro img:nth-child(1), .pro img:nth-child(2), .pro img:nth-child(3){ display: none; 
+            }
+            .down{ padding: 0 6px; 
+            }
+
         }
 
-        /* Small CSS adjustments to match the reference screenshot (Flexbox only) */
+       
         body { background: #0f0f0f; font-family: Arial, sans-serif; overflow-x: hidden; }
         .sidenav {
             width: 17.2%; height: 100vh; padding: 0 8px; box-sizing: border-box;
             background: #212121; align-items: stretch; justify-content: flex-start;
             gap: 0; overflow-y: auto;
         }
-        .logo { height: 64px; min-height: 64px; justify-content: flex-start; padding-left: 18px; box-sizing: border-box; gap: 15px; margin-bottom: 20px; }
-        .logo .img1 { width: 24px; height: 24px; }
-        .logo .img2 { width: 118px; height: auto; }
-        .sidenav .icon { width: 100%; height: 42px; min-height: 42px; padding: 0 18px; box-sizing: border-box; gap: 22px; font-size: 14px; border-radius: 0; }
-        .sidenav .icon:first-of-type { background: #383838; font-weight: 600; }
-        .sidenav .icon img { width: 25px; height: 25px; object-fit: contain; flex-shrink: 0; }
-        .sidenav hr { width: 100%; border: 0; border-top: 1px solid #3b3b3b; margin: 12px 0 18px; }
-        .sidenav > div[style] { padding: 6px 18px 8px; font-size: 14px !important; color: #aaa !important; font-weight: 600 !important; text-transform: uppercase; }
-        .main { margin-left: 18%; width: 82%; min-height: 100vh; padding: 0 22px 25px 8px; box-sizing: border-box; }
-        .top { height: 130px; width: 100%; position: sticky; top: 0; z-index: 5; background: #0f0f0f; }
-        .top hr { border: 0; border-top: 1px solid #303030; margin: 0; }
-        .up { height: 63px; padding: 0 18px 0 12%; justify-content: space-between; gap: 20px; }
-        .search { width: 58%; max-width: 690px; height: 46px; border: 1px solid #303030; border-radius: 4px; background: #121212; }
-        .sear { width: 100%; padding: 12px 10px; color: #aaa; font-size: 16px; }
-        .search img { width: 42px; height: 100%; padding: 9px; object-fit: contain; background: #303030 !important; }
-        .pro { width: 30%; gap: 22px; justify-content: flex-end; }
-        .pro img { width: 25px; height: 25px; object-fit: contain; }
-        .down { height: 64px; padding: 0 16px; display: flex; justify-content: flex-start; gap: 12px; overflow: hidden; white-space: nowrap; }
-        .down span { padding: 10px 16px; border: 1px solid #444; background: #303030; border-radius: 18px; font-size: 14px; flex-shrink: 0; }
-        .vidstack { display: flex; flex-wrap: nowrap; width: 100%; gap: 18px; margin: 24px 0 42px; }
-        .vid { flex: 1 1 0; width: 0; min-width: 0; }
-        .vid .imga { width: 100%; aspect-ratio: 16 / 9; overflow: hidden; }
-        .imga img { display: block; width: 100%; height: 100%; object-fit: cover; }
-        .line { display: flex; align-items: flex-start; }
-        .para { min-width: 0; width: 100%; }
-        .para pre { white-space: pre-wrap; overflow-wrap: anywhere; font-family: Arial, sans-serif; margin: 10px 0 0; line-height: 1.35; }
-        .para pre img { vertical-align: middle; border-radius: 50%; }
+        .logo { height: 64px; 
+            min-height: 64px; 
+            justify-content: flex-start; 
+            padding-left: 18px; 
+            box-sizing: border-box; 
+            gap: 15px; margin-bottom: 20px; 
+        }
+        .logo .img1 { width: 24px;
+             height: 24px; 
+            }
+        .logo .img2 { width: 118px; 
+            height: auto;
+         }
+        .sidenav .icon { width: 100%; 
+            height: 42px; 
+            min-height: 42px; 
+            padding: 0 18px; 
+            box-sizing: border-box; 
+            gap: 22px; 
+            font-size: 14px; 
+            border-radius: 0; 
+        }
+        .sidenav .icon:first-of-type { background: #383838; 
+            font-weight: 600; }
+        .sidenav .icon img { width: 25px;
+            height: 25px;
+             object-fit: contain; 
+             flex-shrink: 0; }
+        .sidenav hr { width: 100%;
+             border: 0; 
+             border-top: 1px solid #3b3b3b; 
+             margin: 12px 0 18px; }
+        .sidenav > div[style] { padding: 6px 18px 8px;
+             font-size: 14px !important;
+              color: #aaa !important; 
+              font-weight: 600 !important; 
+              text-transform: uppercase; }
+        .main { margin-left: 18%; 
+            width: 82%; 
+            min-height: 100vh; 
+            padding: 0 22px 25px 8px; 
+            box-sizing: border-box; }
+        .top { height: 130px; 
+            
+            width: 100%; 
+            position: sticky; 
+            top: 0; 
+            z-index: 5; 
+            background: #0f0f0f; }
+        .top hr { border: 0; 
+            border-top: 1px solid #303030; 
+            margin: 0; }
+        .up { height: 63px; 
+            padding: 0 18px 0 12%; 
+            justify-content: space-between; 
+            gap: 20px; }
+        .search { width: 58%; 
+            max-width: 690px;
+             height: 46px; 
+             border: 1px solid #303030; 
+             border-radius: 4px; 
+             background: #121212; }
+        .sear { width: 100%;
+             padding: 12px 10px;
+              color: #aaa; 
+              font-size: 16px; }
+        .search img { width: 42px; 
+            height: 100%; 
+            padding: 9px; 
+            object-fit: contain; 
+            background: #303030 !important; }
+        .pro { width: 30%; 
+            gap: 22px; 
+            justify-content: flex-end; }
+        .pro img { width: 25px; 
+            height: 25px; 
+            object-fit: contain; }
+        .down { height: 64px; 
+            padding: 0 16px; 
+            display: flex; 
+            justify-content: flex-start; 
+            gap: 12px; 
+            overflow: hidden; 
+            white-space: nowrap; }
+        .down span { padding: 10px 16px; 
+            border: 1px solid #444; 
+            background: #303030; 
+            border-radius: 18px; 
+            font-size: 14px; 
+            flex-shrink: 0; }
+        .vidstack { display: flex; 
+            flex-wrap: nowrap; 
+            width: 100%; 
+            gap: 18px; 
+            margin: 24px 0 42px; }
+        .vid { flex: 1 1 0; 
+            width: 0; 
+            min-width: 0; }
+        .vid .imga { width: 100%; 
+            aspect-ratio: 16 / 9; 
+            overflow: hidden; }
+        .imga img { display: block; 
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; }
+        .line { display: flex; 
+            align-items: flex-start; }
+        .para { min-width: 0; 
+            width: 100%; }
+        .para pre { white-space: pre-wrap; 
+            overflow-wrap: anywhere; 
+            font-family: Arial, sans-serif; 
+            margin: 10px 0 0; 
+            line-height: 1.35; }
+        .para pre img { vertical-align: middle; 
+            border-radius: 50%; }
         @media (max-width: 1200px) {
-            .main { margin-left: 18%; width: 82%; padding-right: 14px; }
+            .main { margin-left: 18%; 
+                width: 82%; 
+                padding-right: 14px; }
             .vidstack { flex-wrap: wrap; }
-            .vid { flex: 1 1 calc(33.333% - 18px); width: auto; }
+            .vid { flex: 1 1 calc(33.333% - 18px); 
+                width: auto; }
             .up { padding-left: 4%; }
             .down { gap: 8px; }
         }
         @media (max-width: 850px) {
-            .sidenav { width: 70px; padding: 0 6px; align-items: center; }
-            .sidenav .icon { justify-content: center; padding: 0; font-size: 0; }
-            .sidenav .icon img { width: 24px; height: 24px; }
-            .sidenav .logo .img2, .sidenav > div[style], .sidenav hr { display: none; }
-            .logo { justify-content: center; padding: 0; }
-            .main { margin-left: 70px; width: calc(100% - 70px); padding: 0 12px; }
-            .up { padding: 0 8px; gap: 8px; }
-            .search { width: 72%; }
-            .pro { width: auto; gap: 10px; }
-            .pro img { width: 21px; height: 21px; }
-            .vidstack { gap: 20px 12px; }
-            .vid { flex: 1 1 calc(50% - 12px); }
+            .sidenav { width: 70px; padding: 0 6px; 
+                align-items: center; }
+            .sidenav .icon { justify-content: center; 
+                padding: 0; font-size: 0; }
+            .sidenav .icon img { width: 24px; 
+                height: 24px; }
+            .sidenav .logo .img2, .sidenav > div[style], .sidenav hr { display: none; 
+            }
+            .logo { justify-content: center;
+                 padding: 0; }
+            .main { margin-left: 70px;
+                 width: calc(100% - 70px);
+                  padding: 0 12px; }
+            .up { padding: 0 8px; 
+                gap: 8px; }
+            .search { width: 72%; 
+            }
+            .pro { width: auto; 
+                gap: 10px; }
+            .pro img { width: 21px; 
+                height: 21px; }
+            .vidstack { gap: 20px 12px; 
+            }
+            .vid { flex: 1 1 calc(50% - 12px); 
+            }
         }
         @media (max-width: 520px) {
             .vidstack { flex-direction: column; }
-            .vid { flex: 1 1 100%; width: 100%; }
-            .pro img:nth-child(1), .pro img:nth-child(2), .pro img:nth-child(3) { display: none; }
-            .down { padding: 0 6px; }
+            .vid { flex: 1 1 100%; 
+                width: 100%; 
+            }
+            .pro img:nth-child(1), .pro img:nth-child(2), .pro img:nth-child(3) { display: none; 
+            }
+            .down { padding: 0 6px; 
+            }
         }
 
     </style>
